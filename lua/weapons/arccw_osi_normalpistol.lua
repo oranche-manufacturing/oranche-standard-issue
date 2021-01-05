@@ -57,7 +57,7 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/pistol_shoot.wav"
+SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
 
@@ -146,12 +146,35 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reg_reload",
         Time = nil,
-        MinProgress = 1,
+        MinProgress = 1.25,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+					},
     },
 	["reload_empty"] = {
         Source = "reg_reload_empty",
         Time = nil,
-        MinProgress = 1,
+        MinProgress = 1.25,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
+						{s = "weapons/arccw_osi/normal pistol/pistolsrelease.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
+					},
+    },
+    ["exit_inspect"] = {
+        Source = "reg_inspect",
+        Time = nil,
+    },
+    ["exit_inspect_empty"] = {
+        Source = "reg_inspect_empty",
+        Time = nil,
     },
     ["enter_sprint"] = {
         Source = "reg_sprint_in",
