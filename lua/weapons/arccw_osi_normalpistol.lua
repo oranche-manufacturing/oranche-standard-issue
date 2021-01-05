@@ -13,6 +13,12 @@ SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
 SWEP.ViewModelFOV= 75
 SWEP.WorldModel= "models/weapons/arccw_osi/normal pistol.mdl"
 
+SWEP.MirrorVMWM = true
+SWEP.WorldModelOffset = {
+    pos = Vector(-8, 3, -3),
+    ang = Angle(-10, 0, 180)
+}
+
 SWEP.Damage= 25
 SWEP.DamageMin= 12
 SWEP.Range= 20 -- metres
@@ -145,6 +151,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reg_reload",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         Time = nil,
         MinProgress = 1.25,
         SoundTable = {
@@ -157,6 +164,7 @@ SWEP.Animations = {
     },
 	["reload_empty"] = {
         Source = "reg_reload_empty",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         Time = nil,
         MinProgress = 1.25,
         SoundTable = {
