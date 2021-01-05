@@ -1,4 +1,7 @@
 VertexLitGeneric
 {
 	$basetexture "models/arccw_osi/normal pistol/m_6"
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
 }
