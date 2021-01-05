@@ -80,7 +80,7 @@ SWEP.CaseBones = {}
 SWEP.IronSightStruct = {
     Pos = Vector(-1.76, 0, 1.24),
     Ang = Angle(0, 0, 0),
-    Magnification = 1.1,
+    Magnification = 1.0,
     SwitchToSound = "",
     SwitchFromSound = "",
 }
