@@ -126,6 +126,9 @@ SWEP.Animations = {
     ["fire_empty"] = {
         Source = "reg_fire_last",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
+					},
     },
 	["fire_iron"] = {
         Source = "reg_fire_ads",
@@ -134,6 +137,9 @@ SWEP.Animations = {
     ["fire_iron_empty"] = {
         Source = "reg_fire_ads_last",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
+					},
     },
     ["draw"] = {
         Source = "reg_draw",
