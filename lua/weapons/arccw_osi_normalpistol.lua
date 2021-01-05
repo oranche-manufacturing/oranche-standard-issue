@@ -100,8 +100,11 @@ SWEP.HoldtypeSights = "revolver"
 SWEP.ActivePos = Vector(0, 0, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0, 0, 0)
-SWEP.HolsterAng = Angle(0, 0, 0)
+SWEP.HolsterPos = Vector(-0, 0, 1)
+SWEP.HolsterAng = Angle(-5, 10, 0)
+
+SWEP.SprintPos = Vector(0, 0, 1)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
