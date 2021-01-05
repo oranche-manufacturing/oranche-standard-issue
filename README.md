@@ -13,7 +13,7 @@ Various weapons for the ArcCW base
 - Papa's fun gun. Wieldy, powerful, and too much. Heavy caliber will need no more than 3 shots to keep someone down permanently.
 - 9 round capacity
 - heavy recoil and somewhat accurate
-### PA9 ('Machine Pistol'l
+### PA9 ('Machine Pistol')
 -Fully automatic with a high rate of fire. Chews through ammo (and people) quickly.
 -32 round capacity
 -Nearly uncontrollable and bad accuracy
@@ -25,7 +25,7 @@ Various weapons for the ArcCW base
 -Self-loading variant of the revolver with high recoil and less accuracy but a higher firerate than its brother
 -6 round capacity
 -Really heavy recoil and good accuracy
-### PC56 ('Pistol')
+### PC56 ('Pistol Carbine')
 -Rifle-caliber pistol-frame gun. Lighter than most typical rifles and boasts high accuracy for a pistol.
 -10 round capacity
 -Low recoil and good accuracy and range
