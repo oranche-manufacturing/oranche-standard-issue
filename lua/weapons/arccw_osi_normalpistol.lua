@@ -3,10 +3,12 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Pistol"
+SWEP.PrintName= "P1911"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Firearm"
-SWEP.Trivia_Desc= "A pistol. Weak, but servicable. A perfect pick for the baby's first gun."
+SWEP.Trivia_Class= "Pistol"
+SWEP.Trivia_Desc= "Baby's First Gun!(tm) Reliable, simple, and easy to use, and 100% guranteed not to be a knockoff of an American classic. We also stuffed more bullets in it because we could."
+SWEP.Trivia_Manufacturer= "Oranche Irish"
+SWEP.Trivia_Country= "Ireland"
 SWEP.Slot= 1
 
 SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
