@@ -98,13 +98,13 @@ SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"
 
-SWEP.ActivePos = Vector(-0.5, -2, 1)
+SWEP.ActivePos = Vector(0, 0, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0, 0, 0)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.BarrelOffsetSighted = Vector(-0.5, -2, 1)
+SWEP.BarrelOffsetSighted = Vector(0, 0, 1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
@@ -114,6 +114,10 @@ SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
         Source = "idle",
+        Time = nil,
+    },
+	["idle_empty"] = {
+        Source = "idle_empty",
         Time = nil,
     },
     ["fire"] = {
@@ -146,6 +150,14 @@ SWEP.Animations = {
         Source = "holster",
         Time = nil,
     },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        Time = nil,
+    },
+    ["holster_empty"] = {
+        Source = "holster_empty",
+        Time = nil,
+    },
     ["reload"] = {
         Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
@@ -173,6 +185,14 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
 					},
     },
+    ["exit_inspect"] = {
+        Source = "inspect",
+        Time = nil,
+    },
+    ["exit_inspect_empty"] = {
+        Source = "inspect_empty",
+        Time = nil,
+    },
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = nil,
@@ -183,6 +203,18 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+        Time = nil,
+    },
+    ["enter_sprint_empty"] = {
+        Source = "sprint_in_empty",
+        Time = nil,
+    },
+    ["idle_sprint_empty"] = {
+        Source = "sprint_empty",
+        Time = nil,
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out_empty",
         Time = nil,
     },
 }
