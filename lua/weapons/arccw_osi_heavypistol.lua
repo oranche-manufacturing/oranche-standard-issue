@@ -3,12 +3,13 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "P50"
+SWEP.PrintName= "P454"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Heavy Pistol"
 SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unecessary way possible? Look no further."
-SWEP.Trivia_Manufacturer= "Oranche Irish"
+SWEP.Trivia_Manufacturer= "Oranche Irish Manufacture"
 SWEP.Trivia_Country= "Ireland"
+SWEP.Trivia_Calibre= ".454 Casull"
 SWEP.Slot= 1
 
 SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
@@ -37,8 +38,8 @@ SWEP.ExtendedClipSize = 12
 SWEP.ReducedClipSize = 7
 
 SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
-SWEP.Recoil = 2 -- vertical recoil
-SWEP.RecoilSide = 0.5 -- horizontal recoil (this is harder/more random to control!)
+SWEP.Recoil = 3 -- vertical recoil
+SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 300 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
