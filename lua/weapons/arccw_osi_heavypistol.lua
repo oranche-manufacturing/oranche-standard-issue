@@ -21,26 +21,26 @@ SWEP.WorldModelOffset = {
     ang = Angle(-10, 0, 180)
 }
 
-SWEP.Damage= 25
-SWEP.DamageMin= 12
-SWEP.Range= 20 -- metres
-SWEP.Penetration= 4 -- millimetres
+SWEP.Damage= 40
+SWEP.DamageMin= 24
+SWEP.Range= 35 -- metres
+SWEP.Penetration= 6 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 9
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 16
-SWEP.ReducedClipSize = 8
+SWEP.ExtendedClipSize = 12
+SWEP.ReducedClipSize = 7
 
-SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
-SWEP.Recoil = 0.5 -- vertical recoil
-SWEP.RecoilSide = 0.3 -- horizontal recoil (this is harder/more random to control!)
+SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
+SWEP.Recoil = 2 -- vertical recoil
+SWEP.RecoilSide = 0.5 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 400 -- 60 / RPM
+SWEP.Delay = 60 / 300 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -54,13 +54,13 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 200 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
-SWEP.Primary.Ammo = "magnum"
+SWEP.Primary.Ammo = "357"
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
