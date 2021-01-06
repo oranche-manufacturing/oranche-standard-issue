@@ -98,13 +98,13 @@ SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"
 
-SWEP.ActivePos = Vector(0, 0, 1)
+SWEP.ActivePos = Vector(-0.5, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0, 0, 0)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
+SWEP.BarrelOffsetSighted = Vector(-0.5, -2, 1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
@@ -113,108 +113,76 @@ SWEP.Attachments = {}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
-        Source = "reg_idle",
-        Time = nil,
-    },
-    ["idle_empty"] = {
-        Source = "reg_idle_empty",
+        Source = "idle",
         Time = nil,
     },
     ["fire"] = {
-        Source = "reg_fire",
+        Source = "fire",
         Time = nil,
     },
     ["fire_empty"] = {
-        Source = "reg_fire_last",
+        Source = "fire_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
 					},
     },
 	["fire_iron"] = {
-        Source = "reg_fire_ads",
+        Source = "fire_ads",
         Time = nil,
     },
     ["fire_iron_empty"] = {
-        Source = "reg_fire_ads_last",
+        Source = "fire_ads_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
 					},
     },
     ["draw"] = {
-        Source = "reg_draw",
-        Time = nil,
-    },
-    ["draw_empty"] = {
-        Source = "reg_draw_empty",
+        Source = "draw",
         Time = nil,
     },
     ["holster"] = {
-        Source = "reg_holster",
-        Time = nil,
-    },
-    ["holster_empty"] = {
-        Source = "reg_holster_empty",
+        Source = "holster",
         Time = nil,
     },
     ["reload"] = {
-        Source = "reg_reload",
+        Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 48/24*1.2,
-        MinProgress = 1.25 *1.2,
+        Time = 48/24,
+        MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2 *1.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67 *1.2},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.1 *1.2},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5 *1.2},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.0},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.4},
 					},
     },
 	["reload_empty"] = {
-        Source = "reg_reload_empty",
+        Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 56/24*1.2,
-        MinProgress = 1.25 *1.2,
+        Time = 56/24,
+        MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2 *1.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67 *1.2},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.1 *1.2},
-						{s = "weapons/arccw_osi/heavy pistol/magnumrelease.wav", 	t = 1.6 *1.2},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8 *1.2},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.0},
+						{s = "weapons/arccw_osi/heavy pistol/magnumrelease.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
 					},
     },
-    ["exit_inspect"] = {
-        Source = "reg_inspect",
-        Time = nil,
-    },
-    ["exit_inspect_empty"] = {
-        Source = "reg_inspect_empty",
-        Time = nil,
-    },
     ["enter_sprint"] = {
-        Source = "reg_sprint_in",
+        Source = "sprint_in",
         Time = nil,
     },
     ["idle_sprint"] = {
-        Source = "reg_sprint",
+        Source = "sprint",
         Time = nil,
     },
     ["exit_sprint"] = {
-        Source = "reg_sprint_out",
-        Time = nil,
-    },
-	["enter_sprint_empty"] = {
-        Source = "reg_sprint_in_empty",
-        Time = nil,
-    },
-    ["idle_sprint_empty"] = {
-        Source = "reg_sprint_empty",
-        Time = nil,
-    },
-    ["exit_sprint_empty"] = {
-        Source = "reg_sprint_out_empty",
+        Source = "sprint_out",
         Time = nil,
     },
 }
