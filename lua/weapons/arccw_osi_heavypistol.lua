@@ -3,10 +3,10 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "P1911"
+SWEP.PrintName= "P50"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Normal Pistol"
-SWEP.Trivia_Desc= "Baby's First Gun!(tm) Reliable, simple, and easy to use, and 100% guranteed not to be a knockoff of an American classic. We also stuffed more bullets in it because we could."
+SWEP.Trivia_Class= "Heavy Pistol"
+SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unecessary way possible? Look no further."
 SWEP.Trivia_Manufacturer= "Oranche Irish"
 SWEP.Trivia_Country= "Ireland"
 SWEP.Slot= 1
@@ -54,13 +54,13 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 15 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
-SWEP.Primary.Ammo = "pistol"
+SWEP.Primary.Ammo = "magnum"
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -76,9 +76,9 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.175
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.80
+SWEP.SightTime = 0.300
+SWEP.SpeedMult = 0.90
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 10
 
