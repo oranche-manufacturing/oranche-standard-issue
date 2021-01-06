@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/heavy pistol/m_0"
+	$envmapmask "models/arccw_osi/heavy pistol/m_0"
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+}

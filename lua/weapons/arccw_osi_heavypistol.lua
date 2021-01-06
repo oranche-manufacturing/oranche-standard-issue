@@ -12,9 +12,9 @@ SWEP.Trivia_Country= "Ireland"
 SWEP.Trivia_Calibre= ".454 Casull"
 SWEP.Slot= 1
 
-SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/heavy pistol.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/heavy pistol.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -87,7 +87,7 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-1.76, 0, 1.24),
+    Pos = Vector(-1.76, 0, 0.96),
     Ang = Angle(0, 0, 0),
     Magnification = 1.0,
     SwitchToSound = "",
