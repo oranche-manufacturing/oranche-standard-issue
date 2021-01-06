@@ -65,7 +65,7 @@ SWEP.Primary.Ammo = "357"
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/magnumfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
 
@@ -160,28 +160,28 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reg_reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 48/24*1.2,
+        MinProgress = 1.25 *1.2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2 *1.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67 *1.2},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.1 *1.2},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5 *1.2},
 					},
     },
 	["reload_empty"] = {
         Source = "reg_reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 56/24*1.2,
+        MinProgress = 1.25 *1.2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/normal pistol/pistolsrelease.wav", 	t = 1.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2 *1.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67 *1.2},
+						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.1 *1.2},
+						{s = "weapons/arccw_osi/heavy pistol/magnumrelease.wav", 	t = 1.6 *1.2},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8 *1.2},
 					},
     },
     ["exit_inspect"] = {
