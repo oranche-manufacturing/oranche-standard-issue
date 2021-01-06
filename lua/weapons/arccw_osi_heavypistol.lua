@@ -3,10 +3,10 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "P1911"
+SWEP.PrintName= "P50"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Normal Pistol"
-SWEP.Trivia_Desc= "Baby's First Gun!(tm) Reliable, simple, and easy to use, and 100% guranteed not to be a knockoff of an American classic. We also stuffed more bullets in it because we could."
+SWEP.Trivia_Class= "Heavy Pistol"
+SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unecessary way possible? Look no further."
 SWEP.Trivia_Manufacturer= "Oranche Irish"
 SWEP.Trivia_Country= "Ireland"
 SWEP.Slot= 1
@@ -21,26 +21,26 @@ SWEP.WorldModelOffset = {
     ang = Angle(-10, 0, 180)
 }
 
-SWEP.Damage= 25
-SWEP.DamageMin= 12
-SWEP.Range= 20 -- metres
-SWEP.Penetration= 4 -- millimetres
+SWEP.Damage= 40
+SWEP.DamageMin= 24
+SWEP.Range= 35 -- metres
+SWEP.Penetration= 6 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 9
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 16
-SWEP.ReducedClipSize = 8
+SWEP.ExtendedClipSize = 12
+SWEP.ReducedClipSize = 7
 
-SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
-SWEP.Recoil = 0.5 -- vertical recoil
-SWEP.RecoilSide = 0.3 -- horizontal recoil (this is harder/more random to control!)
+SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
+SWEP.Recoil = 2 -- vertical recoil
+SWEP.RecoilSide = 0.5 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 400 -- 60 / RPM
+SWEP.Delay = 60 / 300 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -54,13 +54,13 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 15 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 200 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
-SWEP.Primary.Ammo = "pistol"
+SWEP.Primary.Ammo = "357"
 
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -76,9 +76,9 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.175
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.80
+SWEP.SightTime = 0.300
+SWEP.SpeedMult = 0.90
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 10
 
@@ -100,11 +100,8 @@ SWEP.HoldtypeSights = "revolver"
 SWEP.ActivePos = Vector(0, 0, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(-0, 0, 1)
-SWEP.HolsterAng = Angle(-5, 10, 0)
-
-SWEP.SprintPos = Vector(0, 0, 1)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.HolsterPos = Vector(0, 0, 0)
+SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
