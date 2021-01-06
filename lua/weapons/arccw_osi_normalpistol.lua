@@ -7,8 +7,9 @@ SWEP.PrintName= "P1911"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Normal Pistol"
 SWEP.Trivia_Desc= "Baby's First Gun!(tm) Reliable, simple, and easy to use, and 100% guranteed not to be a knockoff of an American classic. We also stuffed more bullets in it because we could."
-SWEP.Trivia_Manufacturer= "Oranche Irish"
+SWEP.Trivia_Manufacturer= "Oranche Irish Manufacture"
 SWEP.Trivia_Country= "Ireland"
+SWEP.Trivia_Calibre= ".45 ACP"
 SWEP.Slot= 1
 
 SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
