@@ -72,7 +72,7 @@ SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 1
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

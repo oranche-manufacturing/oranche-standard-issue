@@ -70,7 +70,7 @@ SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/magnumfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_pistol"
+SWEP.MuzzleEffect = "muzzleflash_pistol_deagle"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellScale = 1.5
 
