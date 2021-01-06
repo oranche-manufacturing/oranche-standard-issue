@@ -41,7 +41,7 @@ SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
 SWEP.Recoil = 3 -- vertical recoil
 SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 300 -- 60 / RPM
+SWEP.Delay = 60 / 210 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -87,8 +87,8 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-1.76, 0, 0.96),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-2.878, -2, 1.919),
+    Ang = Angle(-1.428, 0, 0.361),
     Magnification = 1.0,
     SwitchToSound = "",
     SwitchFromSound = "",
