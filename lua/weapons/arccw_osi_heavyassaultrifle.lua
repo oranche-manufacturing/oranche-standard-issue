@@ -12,13 +12,13 @@ SWEP.Trivia_Country= "Ireland"
 SWEP.Trivia_Calibre= "7.62x39mm"
 SWEP.Slot= 3
 
-SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos = Vector(-8, 3, -3),
+    pos = Vector(-4, 3, -5),
     ang = Angle(-10, 0, 180)
 }
 
@@ -63,7 +63,7 @@ SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "ar2"
 
-SWEP.ShootVol = 90 -- volume of shoot sound
+SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
@@ -71,7 +71,7 @@ SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_ak47"
-SWEP.ShellModel = "models/shells/762nato.mdl"
+SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
@@ -87,16 +87,16 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-1.76, 0, 1.24),
+    Pos = Vector(-2.37, 0, 1.24),
     Ang = Angle(0, 0, 0),
-    Magnification = 1.0,
+    Magnification = 1.2,
     SwitchToSound = "",
     SwitchFromSound = "",
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "crossbow"
-SWEP.HoldtypeSights = "ar2"
+SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeSights = "rpg"
 
 SWEP.ActivePos = Vector(0, 0, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -116,109 +116,90 @@ SWEP.Attachments = {}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
-        Source = "reg_idle",
-        Time = nil,
-    },
-    ["idle_empty"] = {
-        Source = "reg_idle_empty",
+        Source = "idle",
         Time = nil,
     },
     ["fire"] = {
-        Source = "reg_fire",
+        Source = "fire",
         Time = nil,
     },
     ["fire_empty"] = {
-        Source = "reg_fire_last",
+        Source = "fire",
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/riflelast.wav", 	                    t = 0},
 					},
     },
 	["fire_iron"] = {
-        Source = "reg_fire_ads",
+        Source = "fire_ads",
         Time = nil,
     },
     ["fire_iron_empty"] = {
-        Source = "reg_fire_ads_last",
+        Source = "fire_ads",
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/pistolslidelock.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/riflelast.wav", 	                    t = 0},
 					},
     },
     ["draw"] = {
-        Source = "reg_draw",
-        Time = nil,
-    },
-    ["draw_empty"] = {
-        Source = "reg_draw_empty",
+        Source = "draw",
         Time = nil,
     },
     ["holster"] = {
-        Source = "reg_holster",
-        Time = nil,
-    },
-    ["holster_empty"] = {
-        Source = "reg_holster_empty",
+        Source = "holster",
         Time = nil,
     },
     ["reload"] = {
-        Source = "reg_reload",
+        Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 3,
+        MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.5},
 					},
     },
 	["reload_empty"] = {
-        Source = "reg_reload_empty",
+        Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 3.5,
+        MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 1.6},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 1.9},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.2},
+						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 2.6},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 2.9},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.1},
 					},
     },
     ["exit_inspect"] = {
-        Source = "reg_inspect",
+        Source = "inspect",
         Time = nil,
-    },
-    ["exit_inspect_empty"] = {
-        Source = "reg_inspect_empty",
-        Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.7},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.25},
+					},
     },
     ["enter_sprint"] = {
-        Source = "reg_sprint_in",
+        Source = "sprint_in",
         Time = nil,
     },
     ["idle_sprint"] = {
-        Source = "reg_sprint",
+        Source = "sprint",
         Time = nil,
     },
     ["exit_sprint"] = {
-        Source = "reg_sprint_out",
-        Time = nil,
-    },
-	["enter_sprint_empty"] = {
-        Source = "reg_sprint_in_empty",
-        Time = nil,
-    },
-    ["idle_sprint_empty"] = {
-        Source = "reg_sprint_empty",
-        Time = nil,
-    },
-    ["exit_sprint_empty"] = {
-        Source = "reg_sprint_out_empty",
+        Source = "sprint_out",
         Time = nil,
     },
 }

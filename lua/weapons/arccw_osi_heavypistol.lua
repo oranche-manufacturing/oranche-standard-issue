@@ -188,10 +188,28 @@ SWEP.Animations = {
     ["exit_inspect"] = {
         Source = "inspect",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
+						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
+						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
+						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
+					},
     },
     ["exit_inspect_empty"] = {
         Source = "inspect_empty",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
+						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
+						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
+						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
+					},
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

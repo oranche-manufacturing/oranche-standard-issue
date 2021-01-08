@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/heavy assault rifle/m_4"
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+}
