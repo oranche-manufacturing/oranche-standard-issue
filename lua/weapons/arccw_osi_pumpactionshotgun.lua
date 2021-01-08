@@ -3,13 +3,13 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "SVR-762"
+SWEP.PrintName= "BS-12"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Heavy Assault Rifle"
-SWEP.Trivia_Desc= "The Soviets did it right - we did it better. 30 rounds of heart-stopping 7.62x39mm guaranteed to leave you more hurt than your target, or your money back!"
+SWEP.Trivia_Class= "Pump Action Shotgun"
+SWEP.Trivia_Desc= "A relic from both World Wars, this weapon terrified the Germans. We stole it, and manufactured it in Germany. Now that's irony!"
 SWEP.Trivia_Manufacturer= "European Branch"
-SWEP.Trivia_Country= "Russia"
-SWEP.Trivia_Calibre= "7.62x39mm"
+SWEP.Trivia_Country= "Germany"
+SWEP.Trivia_Calibre= "12 Gauge"
 SWEP.Slot= 3
 
 SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
@@ -22,46 +22,47 @@ SWEP.WorldModelOffset = {
     ang = Angle(-10, 0, 180)
 }
 
-SWEP.Damage= 32
-SWEP.DamageMin= 24
+SWEP.Damage= 10
+SWEP.DamageMin= 4
 SWEP.Range= 75 -- metres
-SWEP.Penetration= 8 -- millimetres
+SWEP.Penetration= 4 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 30
+SWEP.Primary.ClipSize = 8
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 60
-SWEP.ReducedClipSize = 15
+SWEP.ExtendedClipSize = 10
+SWEP.ReducedClipSize = 6
 
-SWEP.VisualRecoilMult = 1.0 -- throw the viewmodel how far back
-SWEP.Recoil = 1.2 -- vertical recoil
-SWEP.RecoilSide = 1.2 -- horizontal recoil (this is harder/more random to control!)
+SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
+SWEP.Recoil = 2 -- vertical recoil
+SWEP.RecoilSide = 2 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 600 -- 60 / RPM
-SWEP.Num = 1 -- shots per trigger pull
+SWEP.Num = 8 -- shots per trigger pull
+SWEP.ManualAction= true
 SWEP.Firemodes = {
     {
-        Mode = 2,
+        Mode = 1,
     },
     {
         Mode = 0
     }
 }
 
-SWEP.NPCWeaponType = "weapon_ar2"
+SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
-SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
+SWEP.JumpDispersion = 200 -- dispersion penalty when in the air
 
-SWEP.Primary.Ammo = "ar2"
+SWEP.Primary.Ammo = "buckshot"
 
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
@@ -70,15 +71,15 @@ SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
+SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.400
-SWEP.SpeedMult = 0.80
+SWEP.SightTime = 0.300
+SWEP.SpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 10
@@ -95,7 +96,7 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeActive = "shotgun"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.ActivePos = Vector(0, 0, 1)
