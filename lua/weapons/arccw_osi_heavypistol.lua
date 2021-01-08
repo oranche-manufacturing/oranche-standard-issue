@@ -213,7 +213,7 @@ SWEP.Animations = {
         Source = "sprint_empty",
         Time = nil,
     },
-    ["exit_sprint"] = {
+    ["exit_sprint_empty"] = {
         Source = "sprint_out_empty",
         Time = nil,
     },
