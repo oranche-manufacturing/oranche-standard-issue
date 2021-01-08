@@ -7,8 +7,8 @@ SWEP.PrintName= "P454"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Heavy Pistol"
 SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unecessary way possible? Look no further."
-SWEP.Trivia_Manufacturer= "Oranche Irish Manufacture"
-SWEP.Trivia_Country= "Ireland"
+SWEP.Trivia_Manufacturer= "South American Branch"
+SWEP.Trivia_Country= "Brazil"
 SWEP.Trivia_Calibre= ".454 Casull"
 SWEP.Slot= 1
 
