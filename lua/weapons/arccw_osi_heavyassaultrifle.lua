@@ -6,7 +6,7 @@ SWEP.AdminOnly= false
 SWEP.PrintName= "SVR-762"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Heavy Assault Rifle"
-SWEP.Trivia_Desc= "The Soviets did it right- we did it better. 30 rounds of heart-stopping 7.62x39mm guranteed to leave you more hurt than your target, or your money back!"
+SWEP.Trivia_Desc= "The Soviets did it right- we did it better. 30 rounds of heart-stopping 7.62x39mm guaranteed to leave you more hurt than your target, or your money back!"
 SWEP.Trivia_Manufacturer= "European Branch"
 SWEP.Trivia_Country= "Russia"
 SWEP.Trivia_Calibre= "7.62x39mm"
@@ -52,7 +52,7 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.NPCWeaponType = "weapon_pistol"
+SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100 -- 100 in the center
 
 SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
@@ -63,12 +63,12 @@ SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "ar2"
 
-SWEP.ShootVol = 115 -- volume of shoot sound
+SWEP.ShootVol = 90 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_ak47"
 SWEP.ShellModel = "models/shells/762nato.mdl"
@@ -163,14 +163,14 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reg_reload",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = nil,
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
 					},
     },
@@ -181,11 +181,12 @@ SWEP.Animations = {
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/normal pistol/pistolsrelease.wav", 	t = 1.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 1.9},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.2},
 					},
     },
     ["exit_inspect"] = {
@@ -221,5 +222,5 @@ SWEP.Animations = {
         Time = nil,
     },
 }
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
