@@ -3,12 +3,12 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "BS-12"
+SWEP.PrintName= "TS-12"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Pump Action Shotgun"
-SWEP.Trivia_Desc= "A relic from both World Wars, this weapon terrified the Germans. We stole it, and manufactured it in Germany. Now that's irony!"
+SWEP.Trivia_Desc= "An old Russian pump-action shotgun. Does what youd expect it to do, except better, because we made it."
 SWEP.Trivia_Manufacturer= "European Branch"
-SWEP.Trivia_Country= "Germany"
+SWEP.Trivia_Country= "Russia"
 SWEP.Trivia_Calibre= "12 Gauge"
 SWEP.Slot= 3
 
@@ -24,7 +24,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.Damage= 10
 SWEP.DamageMin= 4
-SWEP.Range= 75 -- metres
+SWEP.Range= 20 -- metres
 SWEP.Penetration= 4 -- millimetres
 SWEP.DamageType= DMG_BULLET + DMG_BUCKSHOT
 SWEP.ShootEntity= nil
@@ -35,7 +35,7 @@ SWEP.ChamberSize = 0 -- remember to not be an idiot
 SWEP.Primary.ClipSize = 5
 -- cs+ style clip extenders
 SWEP.ExtendedClipSize = 10
-SWEP.ReducedClipSize = 6
+SWEP.ReducedClipSize = 5
 
 SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
 SWEP.Recoil = 2 -- vertical recoil
@@ -78,7 +78,7 @@ SWEP.ShellScale = 1
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.300
+SWEP.SightTime = 0.500
 SWEP.SpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.75
 
