@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/pump action shotgun/m_4"
+	$envmapmask "models/arccw_osi/pump action shotgun/m_4"
+	$selfillummask "models/arccw_osi/pump action shotgun/m_4_si"
+	$selfillum 1
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+	$envmap env_cubemap
+	$envmaptint "[0.12 0.12 0.12]"
+	$envmapfresnel 1
+}

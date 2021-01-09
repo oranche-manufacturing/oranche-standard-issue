@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/pump action shotgun/m_5"
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+}

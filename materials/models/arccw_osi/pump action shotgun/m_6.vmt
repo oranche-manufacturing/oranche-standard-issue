@@ -1,7 +1,7 @@
 VertexLitGeneric
 {
-	$basetexture "models/arccw_osi/heavy assault rifle/m_6"
-	$selfillummask "models/arccw_osi/heavy assault rifle/m_6_si"
+	$basetexture "models/arccw_osi/pump action shotgun/m_6"
+	$selfillummask "models/arccw_osi/pump action shotgun/m_6_si"
 	$selfillum 1
 	$phong 1
 	$phongboost 5
