@@ -66,7 +66,7 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
+SWEP.ShootSound = "^weapons/smg1/npc_smg1_fire1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 
