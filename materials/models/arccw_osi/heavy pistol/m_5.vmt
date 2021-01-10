@@ -1,11 +1,11 @@
 VertexLitGeneric
 {
 	$basetexture "models/arccw_osi/heavy pistol/m_5"
-	$envmapmask "models/arccw_osi/heavy pistol/m_5"
+	$basealphaenvmapmask 1
 	$phong 1
 	$phongboost 5
 	$phongexponent 20
 	$envmap env_cubemap
-	$envmaptint "[0.25 0.25 0.25]"
+	$envmaptint "[0.5 .25 .25]"
 	$envmapfresnel 1
 }

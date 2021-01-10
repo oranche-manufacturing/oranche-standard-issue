@@ -67,9 +67,9 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "^weapons/smg1/npc_smg1_fire1.wav"
+SWEP.ShootSound = "weapons/arccw_osi/smg/smg_fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/smg/smg_dist.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_mp5"
 SWEP.ShellModel = "models/shells/shell_556.mdl"
@@ -168,10 +168,10 @@ SWEP.Animations = {
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1.9},
+						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.9},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.3},
 					},
     },
@@ -182,12 +182,12 @@ SWEP.Animations = {
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1.9},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 2.6},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 2.9},
+						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.9},
+						{s = "weapons/arccw_osi/smg/smg_chback.wav", 	t = 2.4},
+						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.8},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.2},
 					},
     },
