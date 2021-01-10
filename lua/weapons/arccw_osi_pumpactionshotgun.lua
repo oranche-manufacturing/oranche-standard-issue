@@ -18,8 +18,9 @@ SWEP.WorldModel= "models/weapons/arccw_osi/pump action shotgun.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos = Vector(-4, 3, -5),
-    ang = Angle(-10, 0, 180)
+    pos = Vector(-6, 4, -4),
+    ang = Angle(-10, 0, 180),
+    scale = Vector(1.25, 1.25, 1.25),
 }
 
 SWEP.Damage= 10

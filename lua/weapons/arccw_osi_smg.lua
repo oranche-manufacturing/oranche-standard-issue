@@ -12,14 +12,15 @@ SWEP.Trivia_Country= "Germany"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 3
 
-SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/smg.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/smg.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos = Vector(-4, 3, -5),
-    ang = Angle(-10, 0, 180)
+    pos = Vector(-7, 4, -3),
+    ang = Angle(-10, 0, 180),
+    scale = Vector(1.5, 1.5, 1.5),
 }
 
 SWEP.Damage= 20
@@ -87,24 +88,25 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.37, 0, 1.24),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-3.07, 0, 1.28),
+    Ang = Angle(-1.7, 0, 0),
     Magnification = 1.2,
     SwitchToSound = "",
     SwitchFromSound = "",
+    CrosshairInSights = false,
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "ar2"
+SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "rpg"
 
-SWEP.ActivePos = Vector(0, 0, 1)
+SWEP.ActivePos = Vector(0, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(-0, 0, 1)
+SWEP.HolsterPos = Vector(0, -2, 1)
 SWEP.HolsterAng = Angle(-5, 10, 0)
 
-SWEP.SprintPos = Vector(0, 0, 1)
+SWEP.SprintPos = Vector(0, -2, 1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
@@ -151,43 +153,32 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 3,
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
+        Time = nil,
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.5},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1.9},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.3},
 					},
     },
 	["reload_empty"] = {
         Source = "reload_empty",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 3.5,
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
+        Time = nil,
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.6},
+						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 1.9},
 						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 2.6},
 						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 2.9},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.1},
-					},
-    },
-    ["exit_inspect"] = {
-        Source = "inspect",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.7},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.25},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.2},
 					},
     },
     ["enter_sprint"] = {
@@ -203,5 +194,5 @@ SWEP.Animations = {
         Time = nil,
     },
 }
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 

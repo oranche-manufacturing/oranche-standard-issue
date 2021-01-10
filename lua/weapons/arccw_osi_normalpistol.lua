@@ -19,7 +19,8 @@ SWEP.WorldModel= "models/weapons/arccw_osi/normal pistol.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     pos = Vector(-8, 3, -3),
-    ang = Angle(-10, 0, 180)
+    ang = Angle(-10, 0, 180),
+    scale = Vector(1.25, 1.25, 1.25),
 }
 
 SWEP.Damage= 25
