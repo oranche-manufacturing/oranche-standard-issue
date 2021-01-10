@@ -129,7 +129,7 @@ SWEP.Animations = {
         Source = "fire",
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/riflelast.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/smg_last.wav", 	                    t = 0},
 					},
     },
 	["fire_iron"] = {
@@ -140,7 +140,7 @@ SWEP.Animations = {
         Source = "fire_ads",
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/riflelast.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/smg_last.wav", 	                    t = 0},
 					},
     },
     ["draw"] = {
