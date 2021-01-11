@@ -171,6 +171,16 @@ SWEP.Animations = {
         Source = "draw",
         Time = nil,
     },
+    ["ready"] = {
+        Source = "draw_first",
+        Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.5},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.7},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.9},
+					},
+    },
     ["holster"] = {
         Source = "holster",
         Time = nil,
