@@ -3,9 +3,9 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "P454"
+SWEP.PrintName= "Casull Automag"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Heavy Pistol"
+SWEP.Trivia_Class= "Magnum Pistol"
 SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unnecessary way possible? Look no further."
 SWEP.Trivia_Manufacturer= "South American Branch"
 SWEP.Trivia_Country= "Brazil"

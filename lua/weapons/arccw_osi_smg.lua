@@ -3,14 +3,14 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "SMG-9K"
+SWEP.PrintName= "TMP5"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "SMG"
 SWEP.Trivia_Desc= "A reliable SMG for police, military police, and thought police alike, handcrafted by German manual labour."
 SWEP.Trivia_Manufacturer= "European Branch"
 SWEP.Trivia_Country= "Germany"
 SWEP.Trivia_Calibre= "9x19mm"
-SWEP.Slot= 3
+SWEP.Slot= 2
 
 SWEP.ViewModel= "models/weapons/arccw_osi/smg.mdl"
 SWEP.ViewModelFOV= 75

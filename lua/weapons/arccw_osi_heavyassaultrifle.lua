@@ -3,14 +3,14 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "SVR-762"
+SWEP.PrintName= "ARK-47"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Heavy Assault Rifle"
+SWEP.Trivia_Class= "Assault Rifle"
 SWEP.Trivia_Desc= "The Soviets did it right - we did it better. 30 rounds of heart-stopping 7.62x39mm guaranteed to leave you more hurt than your target, or your money back!"
 SWEP.Trivia_Manufacturer= "European Branch"
 SWEP.Trivia_Country= "Russia"
 SWEP.Trivia_Calibre= "7.62x39mm"
-SWEP.Slot= 3
+SWEP.Slot= 2
 
 SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
 SWEP.ViewModelFOV= 75

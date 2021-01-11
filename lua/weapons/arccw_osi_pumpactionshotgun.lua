@@ -3,14 +3,14 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "TS-12"
+SWEP.PrintName= "M500"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Pump Action Shotgun"
-SWEP.Trivia_Desc= "An old Russian pump-action shotgun. Does what youd expect it to do, except better, because we made it."
-SWEP.Trivia_Manufacturer= "European Branch"
-SWEP.Trivia_Country= "Russia"
+SWEP.Trivia_Class= "Shotgun"
+SWEP.Trivia_Desc= "An old American pump-action shotgun. Does what youd expect it to do, except better, because we made it."
+SWEP.Trivia_Manufacturer= "North American Branch"
+SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= "12 Gauge"
-SWEP.Slot= 3
+SWEP.Slot= 2
 
 SWEP.ViewModel= "models/weapons/arccw_osi/pump action shotgun.mdl"
 SWEP.ViewModelFOV= 75
