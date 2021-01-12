@@ -68,7 +68,7 @@ SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/normal pistol/pistoldistnope.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_pistol"
@@ -113,7 +113,17 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+	{
+		PrintName= "Muzzle",
+		Slot= {"osi_suppressor","osi_device"},
+		Bone= "j_gun",
+		Offset= {
+			vpos = Vector(6.5, 0, 2.3),
+			vang = Angle(0, 0, 0),
+		},	
+	},
+}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
