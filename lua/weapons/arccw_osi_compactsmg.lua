@@ -72,8 +72,9 @@ SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/smg/smg_dist.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_mp5"
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellScale = 1
+SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -124,6 +125,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         Time = nil,
+        ShellEjectAt = 0,
     },
     ["fire_empty"] = {
         Source = "fire",
@@ -131,10 +133,12 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/smg_last.wav", 	                    t = 0},
 					},
+        ShellEjectAt = 0,
     },
 	["fire_iron"] = {
         Source = "fire_ads",
         Time = nil,
+        ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
         Source = "fire_ads",
@@ -142,6 +146,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/smg_last.wav", 	                    t = 0},
 					},
+        ShellEjectAt = 0,
     },
     ["draw"] = {
         Source = "pullout",

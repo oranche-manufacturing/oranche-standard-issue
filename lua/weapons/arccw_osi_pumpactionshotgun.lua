@@ -73,8 +73,10 @@ SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/pump action shotgun/pump dist.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
-SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellScale = 1
+SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
+SWEP.ShellScale = 1.5
+SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -150,6 +152,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cycle",
         Time = 0.4,
+        ShellEjectAt = 0,
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
@@ -160,6 +163,7 @@ SWEP.Animations = {
     ["cycle_iron"] = {
         Source = "cycle_ads",
         Time = 0.4,
+        ShellEjectAt = 0,
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
@@ -197,6 +201,7 @@ SWEP.Animations = {
         Source = "reload_end",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
+        ShellEjectAt = 0,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.3},
