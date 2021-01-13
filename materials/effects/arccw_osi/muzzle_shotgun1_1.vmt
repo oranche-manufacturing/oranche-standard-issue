@@ -1,8 +1,8 @@
 "UnlitGeneric"
 {
 	//"$basetexture" "effects/combinemuzzle1"
-	"$basetexture" "effects/arccw_osi/muzzle_smg1_1"
-	"$additive" "1"
+	"$basetexture" "effects/arccw_osi/muzzle_shotgun1_1"
+	"$additive" "0"
 	"$vertexalpha" "1"
 	"$vertexcolor" 1
 	"$translucent" "1"

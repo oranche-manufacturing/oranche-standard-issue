@@ -1,4 +1,4 @@
-local images_muzzle = {"effects/arccw_osi/muzzle_smg1_1","effects/arccw_osi/muzzle_smg1_2"}
+local images_muzzle = {"effects/arccw_osi/muzzle_smg1"}
 local images_smoke = {"effects/arccw_osi/smoke1_1","effects/arccw_osi/smoke1_2","effects/arccw_osi/smoke1_3","effects/arccw_osi/smoke1_4",}
 local images_distort = {"sprites/heatwave"}
 
@@ -26,39 +26,22 @@ function EFFECT:Init(data)
 
     local emitter = ParticleEmitter(pos)
 
-    if !wpn.Suppressed and !wpn.FlashHidden then
-        local particle = emitter:Add(TableRandomChoice(images_muzzle), pos)
-
-        if particle then
-            particle:SetVelocity(addvel)
-            particle:SetLifeTime(0)
-            particle:SetDieTime(math.Rand(0.05, 0.1))
-            particle:SetStartAlpha(math.Rand(150, 200))
-            particle:SetEndAlpha(0)
-            particle:SetStartSize(math.Rand(8, 7))
-            particle:SetEndSize(math.Rand(2, 5))
-            particle:SetLighting(false)
-            particle:SetRoll(math.random(0, 360))
-            particle:SetColor(255, 255, 255)
-        end
-    end
-
     for i = 1, quality do
         local particle = emitter:Add(TableRandomChoice(images_smoke), pos)
 
         if particle then
-            particle:SetVelocity(VectorRand() * 10 + addvel + Vector(0, 0, -10))
+            particle:SetVelocity(VectorRand() * 10 + addvel)
             particle:SetLifeTime(0)
             particle:SetDieTime(math.Rand(1, 1.5))
-            particle:SetStartAlpha(math.Rand(20, 25) * (4 - quality))
-            particle:SetEndAlpha(1 * (4 - quality))
-            particle:SetStartSize(math.Rand(2, 6)+pwpn:GetBurstCount()*0.5)
-            particle:SetEndSize(math.Rand(2, 3)+pwpn:GetBurstCount()*0.5)
+            particle:SetStartAlpha(25 * (4 - quality))
+            particle:SetEndAlpha(50 * (4 - quality))
+            particle:SetStartSize(0+pwpn:GetBurstCount())
+            particle:SetEndSize(math.Rand(3, 6)+pwpn:GetBurstCount())
             particle:SetRoll(math.rad(90*math.random(0, 3)))
             particle:SetRollDelta(math.Rand(-0, 0))
             particle:SetLighting(true)
-            particle:SetAirResistance(96)
-            particle:SetGravity(Vector(0, 0, 20))
+            particle:SetAirResistance(196)
+            particle:SetGravity(Vector(0, 0, 10))
             particle:SetColor(255, 255, 255)
         end
     end

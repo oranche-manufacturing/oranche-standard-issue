@@ -13,7 +13,8 @@ att.SortOrder = 12
 att.Model = "models/weapons/arccw_osi/attachments/pbs 1.mdl"
 
 att.Silencer = true
-att.Override_MuzzleEffect = "muzzleflash_suppressed"
+att.Override_MuzzleEffect = "osi_muzzleeffect_pistol_silenced"
+att.Override_GMMuzzleEffect = true
 att.IsMuzzleDevice = true
 
 att.Mult_ShootVol = 0.75

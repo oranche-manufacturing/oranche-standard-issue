@@ -1,5 +1,5 @@
-local images_muzzle = {"effects/arccw_osi/muzzle_smg1"}
-local images_smoke = {"particle/smokesprites_0001", "particle/smokesprites_0002", "particle/smokesprites_0003", "particle/smokesprites_0004", "particle/smokesprites_0005", "particle/smokesprites_0006", "particle/smokesprites_0007", "particle/smokesprites_0008", "particle/smokesprites_0009", "particle/smokesprites_0010", "particle/smokesprites_0011", "particle/smokesprites_0012", "particle/smokesprites_0013", "particle/smokesprites_0014", "particle/smokesprites_0015", "particle/smokesprites_0016"}
+local images_muzzle = {"effects/arccw_osi/muzzle_shotgun1_1"}
+local images_smoke = {"effects/arccw_osi/smoke1_1","effects/arccw_osi/smoke1_2","effects/arccw_osi/smoke1_3","effects/arccw_osi/smoke1_4",}
 local images_distort = {"sprites/heatwave"}
 
 local function TableRandomChoice(tbl)
@@ -7,7 +7,7 @@ local function TableRandomChoice(tbl)
 end
 
 function EFFECT:Init(data)
-    local quality = 3
+    local quality = GetConVar("arccw_osi_particlequality"):GetInt()
 
     if quality == 0 then return end
 
@@ -35,30 +35,30 @@ function EFFECT:Init(data)
             particle:SetDieTime(.1)
             particle:SetStartAlpha(math.Rand(150, 200))
             particle:SetEndAlpha(0)
-            particle:SetStartSize(math.Rand(18, 17))
-            particle:SetEndSize(13)
+            particle:SetStartSize(math.Rand(14, 16))
+            particle:SetEndSize(20)
             particle:SetLighting(false)
             particle:SetRoll(math.random(0, 360))
             particle:SetColor(255, 255, 255)
         end
     end
 
-    for i = 1, quality do
+    for i = 1, quality*3 do
         local particle = emitter:Add(TableRandomChoice(images_smoke), pos)
 
         if particle then
-            particle:SetVelocity(VectorRand() * 10 + addvel)--(dir * i * math.Rand(6, 12)) + addvel)
+            particle:SetVelocity(VectorRand() * 10 + addvel + Vector(0, 0, -10))
             particle:SetLifeTime(0)
             particle:SetDieTime(math.Rand(1, 1.5))
-            particle:SetStartAlpha(math.Rand(60, 75) * (4 - quality))
-            particle:SetEndAlpha(0)
-            particle:SetStartSize(4)
-            particle:SetEndSize(math.Rand(12, 24)+pwpn:GetBurstCount())
-            particle:SetRoll(math.rad(math.Rand(0, 360)))
-            particle:SetRollDelta(math.Rand(-1, 1))
+            particle:SetStartAlpha(math.Rand(20, 25) * (4 - quality))
+            particle:SetEndAlpha(math.Rand(20, 25) * (4 - quality))
+            particle:SetStartSize(math.Rand(2, 6)+pwpn:GetBurstCount()*2)
+            particle:SetEndSize(math.Rand(6, 12)+pwpn:GetBurstCount()*2)
+            particle:SetRoll(math.rad(90*math.random(0, 3)))
+            particle:SetRollDelta(math.Rand(-0, 0))
             particle:SetLighting(true)
             particle:SetAirResistance(96)
-            particle:SetGravity(Vector(0, 0, 0))--Vector(-7, 3, 30))
+            particle:SetGravity(Vector(0, 0, 20))
             particle:SetColor(255, 255, 255)
         end
     end
@@ -73,26 +73,12 @@ function EFFECT:Init(data)
             particle:SetStartAlpha(255)
             particle:SetEndAlpha(0)
             particle:SetStartSize(math.Rand(5, 15))
-            particle:SetEndSize(pwpn:GetBurstCount())
+            particle:SetEndSize(pwpn:GetBurstCount()*2)
             particle:SetRoll(math.Rand(0, 360))
             particle:SetRollDelta(math.Rand(-2, 2))
             particle:SetAirResistance(5)
             particle:SetGravity(Vector(0, 0, 40))
             particle:SetColor(255, 255, 255)
-        end
-
-        if !wpn.Suppressed then
-            local light = DynamicLight(self:EntIndex())
-            if (light) then
-                light.Pos = pos
-                light.r = 244
-                light.g = 209
-                light.b = 66
-                light.Brightness = 2
-                light.Decay = 2500
-                light.Size = 256
-                light.DieTime = CurTime() + 0.1
-            end
         end
     end
 
