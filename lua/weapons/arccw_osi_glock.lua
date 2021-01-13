@@ -3,11 +3,11 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Giest 17MP"
+SWEP.PrintName= "C&N 18P"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Machine Pistol"
-SWEP.Trivia_Desc= "Pocket gun, only really suitable for combat in a phone booth, but a blistering rate of fire."
-SWEP.Trivia_Manufacturer= "European Branch"
+SWEP.Trivia_Class= "Pistol"
+SWEP.Trivia_Desc= "The good ol days of Crowdley & Nelson back in Austria. Might not be old, but it sure has its place among modern pistols. (If you disagree, we'll sue you.)"
+SWEP.Trivia_Manufacturer= "Crowdley & Nelson Inc."
 SWEP.Trivia_Country= "Austria"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 1

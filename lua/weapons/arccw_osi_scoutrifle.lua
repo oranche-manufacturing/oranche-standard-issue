@@ -3,13 +3,13 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Mini-21"
+SWEP.PrintName= "Falcon .223"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Scout Rifle"
-SWEP.Trivia_Desc= "A lightweight beginner-friendly and gun law-friendly rifle used in sport shooting and hunting."
-SWEP.Trivia_Manufacturer= "North American Branch"
-SWEP.Trivia_Country= "U.S.A"
-SWEP.Trivia_Calibre= "5.56x45mm"
+SWEP.Trivia_Class= "Rifle"
+SWEP.Trivia_Desc= "We sell this dirt-cheap. Its (probably) compliant with every gun law, and still made with enough metal to ensure the perfect shot."
+SWEP.Trivia_Manufacturer= "Sportfield Arms U.S.A"
+SWEP.Trivia_Country= "California"
+SWEP.Trivia_Calibre= ".223 Remington"
 SWEP.Slot= 2
 
 SWEP.ViewModel= "models/weapons/arccw_osi/smg.mdl"

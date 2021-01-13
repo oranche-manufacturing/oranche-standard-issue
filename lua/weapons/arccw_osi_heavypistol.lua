@@ -3,13 +3,13 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Casull Automag"
+SWEP.PrintName= "Wildman Red"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Magnum Pistol"
-SWEP.Trivia_Desc= "Do you want to assert your dominance over someone else in the most unnecessary way possible? Look no further."
-SWEP.Trivia_Manufacturer= "South American Branch"
-SWEP.Trivia_Country= "Brazil"
-SWEP.Trivia_Calibre= ".454 Casull"
+SWEP.Trivia_Desc= "No better pistol for hunting big game, made with unique family-secret materials giving this fine weapon a cherry red color."
+SWEP.Trivia_Manufacturer= "Blackeye Family Co."
+SWEP.Trivia_Country= "U.S.A"
+SWEP.Trivia_Calibre= ".357 Magnum"
 SWEP.Slot= 1
 
 SWEP.ViewModel= "models/weapons/arccw_osi/heavy pistol.mdl"

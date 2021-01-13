@@ -3,11 +3,11 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "TMP5"
+SWEP.PrintName= "C&N PMP"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "SMG"
-SWEP.Trivia_Desc= "A reliable SMG for police, military police, and thought police alike, handcrafted by German manual labour."
-SWEP.Trivia_Manufacturer= "European Branch"
+SWEP.Trivia_Desc= "Lawful-good to the end. we only sell this to the best of the best, because they have the most money!"
+SWEP.Trivia_Manufacturer= "Crowdley & Nelson Inc."
 SWEP.Trivia_Country= "Germany"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 2
