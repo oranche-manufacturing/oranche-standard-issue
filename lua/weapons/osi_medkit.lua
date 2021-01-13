@@ -72,11 +72,11 @@ function SWEP:PrimaryAttack()
 		self:TakePrimaryAmmo( need )
 
 		ent:SetHealth( math.min( ent:GetMaxHealth(), ent:Health() + need ) )
-		ent:EmitSound( "weapons/arccw_osi/tick"..math.ceil((ent():Health()/ent():GetMaxHealth())*3)..".wav", 60, (ent():Health()/ent():GetMaxHealth())*100, 0.5 )
+		ent:EmitSound( "weapons/arccw_osi/tick"..math.ceil((ent:Health()/ent:GetMaxHealth())*3)..".wav", 60, (ent:Health()/ent:GetMaxHealth())*100, 0.5 )
 
 		self:SendWeaponAnim( ACT_VM_PRIMARYATTACK )
 
-		self:SetNextPrimaryFire( CurTime() + 0.05 )
+		self:SetNextPrimaryFire( CurTime() + 0.05 + ( 0.1 * ( ent:Health() / ent:GetMaxHealth() ) ) )
 		self.Owner:SetAnimation( PLAYER_ATTACK1 )
 
 		-- Even though the viewmodel has looping IDLE anim at all times, we need this to make fire animation work in multiplayer
@@ -84,8 +84,8 @@ function SWEP:PrimaryAttack()
 
 	else
 
-		self.Owner:EmitSound( DenySound )
-		self:SetNextPrimaryFire( CurTime() + 1 )
+		self.Owner:EmitSound( "weapons/arccw_osi/tick4.wav" )
+		self:SetNextPrimaryFire( CurTime() + .5 )
 
 	end
 
