@@ -1,0 +1,22 @@
+{
+	"title" :	"[ArcCW] (WIP) Oranche Standard Issue",
+	"type"  :	"weapon",
+	"tags"  :	[],
+	"ignore":
+	[
+		"*.cmd",
+		"*.ini",
+		"*.lnk",
+		"*.url",
+		"*.psd",
+        "*.bat",
+        ".git/*",
+        ".gitignore",
+        ".gitattributes",
+        "*.code-workspace",
+        "LICENSE",
+        "README.md",
+		"oranche-standard-issue.jpg",
+		"oranche-standard-issue.png"
+	]
+}
