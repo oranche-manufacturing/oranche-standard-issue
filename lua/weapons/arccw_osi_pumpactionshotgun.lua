@@ -72,7 +72,8 @@ SWEP.ShootSound = "weapons/arccw_osi/pump action shotgun/pump fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/pump action shotgun/pump dist.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_shotgun"
+SWEP.MuzzleEffect = "osi_muzzleeffect_shotgun"
+SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellSounds = ArcCW.ShotgunShellSoundsTable
 SWEP.ShellScale = 1.5

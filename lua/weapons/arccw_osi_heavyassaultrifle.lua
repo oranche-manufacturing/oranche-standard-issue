@@ -71,7 +71,8 @@ SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
+SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
+SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1.5
 SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
