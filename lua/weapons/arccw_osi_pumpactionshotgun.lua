@@ -3,11 +3,11 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "M500"
+SWEP.PrintName= "B500"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Shotgun"
-SWEP.Trivia_Desc= "An old American pump-action shotgun. Does what youd expect it to do, except better, because we made it."
-SWEP.Trivia_Manufacturer= "North American Branch"
+SWEP.Trivia_Desc= "Can't get more classic than this! We defined the word 'pump-action' with this model, and have been going at it since... sometime."
+SWEP.Trivia_Manufacturer= "Sportfield Arms U.S.A"
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= "12 Gauge"
 SWEP.Slot= 2

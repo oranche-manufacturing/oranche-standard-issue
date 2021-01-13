@@ -3,11 +3,11 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "1911 Protector"
+SWEP.PrintName= "Cobra .45"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Pistol"
-SWEP.Trivia_Desc= "Baby's First Gun!(tm) Reliable, simple, and easy to use, and 100% guaranteed not to be a knockoff of an American classic. We also stuffed more bullets in it because we could."
-SWEP.Trivia_Manufacturer= "North American Branch"
+SWEP.Trivia_Desc= "A century-old .45 pistol that lives up to its age with ease of use and service history."
+SWEP.Trivia_Manufacturer= "Federal Arms"
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= ".45 ACP"
 SWEP.Slot= 1
@@ -23,17 +23,17 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.25, 1.25, 1.25),
 }
 
-SWEP.Damage= 25
-SWEP.DamageMin= 12
-SWEP.Range= 30 -- metres
-SWEP.Penetration= 4 -- millimetres
+SWEP.Damage= 37
+SWEP.DamageMin= 15
+SWEP.Range= 32 -- metres
+SWEP.Penetration= 5 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 12
+SWEP.Primary.ClipSize = 7
 -- cs+ style clip extenders
 SWEP.ExtendedClipSize = 16
 SWEP.ReducedClipSize = 8

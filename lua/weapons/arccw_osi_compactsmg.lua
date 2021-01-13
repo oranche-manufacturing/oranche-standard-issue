@@ -3,11 +3,11 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Gal 9"
+SWEP.PrintName= "Galzi-9"
 SWEP.Category= "ArcCW - OSI"
-SWEP.Trivia_Class= "Compact SMG"
-SWEP.Trivia_Desc= "A cheap and easily affordable SMG from factories in Israel."
-SWEP.Trivia_Manufacturer= "Middle Eastern Branch"
+SWEP.Trivia_Class= "SMG"
+SWEP.Trivia_Desc= "Hollywood film star. Criminals. Military. It has served them all- and it will serve you just fine. No refunds."
+SWEP.Trivia_Manufacturer= "Star Of David Inc."
 SWEP.Trivia_Country= "Israel"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 2
