@@ -23,10 +23,10 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.5, 1.5, 1.5),
 }
 
-SWEP.Damage= 20
-SWEP.DamageMin= 12
-SWEP.Range= 20 -- metres
-SWEP.Penetration= 2 -- millimetres
+SWEP.Damage= 27
+SWEP.DamageMin= 15
+SWEP.Range= 45 -- metres
+SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 

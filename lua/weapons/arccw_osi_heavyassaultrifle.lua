@@ -23,7 +23,7 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.1, 1.1, 1.1),
 }
 
-SWEP.Damage= 36
+SWEP.Damage= 38
 SWEP.DamageMin= 26
 SWEP.Range= 75 -- metres
 SWEP.Penetration= 8 -- millimetres

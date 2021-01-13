@@ -24,8 +24,8 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.Damage= 24
-SWEP.DamageMin= 11
-SWEP.Range= 25 -- metres
+SWEP.DamageMin= 15
+SWEP.Range= 40 -- metres
 SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
@@ -39,8 +39,8 @@ SWEP.ExtendedClipSize = 50
 SWEP.ReducedClipSize = 15
 
 SWEP.VisualRecoilMult = 1.0 -- throw the viewmodel how far back
-SWEP.Recoil = 0.5 -- vertical recoil
-SWEP.RecoilSide = 0.2 -- horizontal recoil (this is harder/more random to control!)
+SWEP.Recoil = 0.8 -- vertical recoil
+SWEP.RecoilSide = 0.5 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 900 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
