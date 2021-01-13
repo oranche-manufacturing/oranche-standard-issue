@@ -1,4 +1,10 @@
 
+local images_smoke = {"effects/arccw_osi/eject1_1","effects/arccw_osi/eject1_2"}
+
+local function TableRandomChoice(tbl)
+    return tbl[math.random(#tbl)]
+end
+
 EFFECT.Sounds = {}
 EFFECT.Pitch = 90
 EFFECT.Scale = 1.5
@@ -105,7 +111,7 @@ function EFFECT:Init(data)
     self.HitPitch = self.Pitch + math.Rand(-5,5)
 
     local emitter = ParticleEmitter(origin)
-    local particle = emitter:Add("effects/arccw_osi/eject1", origin)
+    local particle = emitter:Add(TableRandomChoice(images_smoke), origin)
     if (particle) then
         particle:SetVelocity(Vector(ang:Up()*4, 0, 0) + plyvel) 
         particle:SetLifeTime(0)
