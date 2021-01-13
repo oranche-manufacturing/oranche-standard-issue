@@ -9,7 +9,7 @@ end
 function EFFECT:Init(data)
     local quality = GetConVar("arccw_osi_particlequality"):GetInt()
 
-    if quality == 0 then return end
+    if quality == 1 then return end
 
     local wpn = data:GetEntity()
     if !IsValid(wpn) then return end
@@ -32,11 +32,11 @@ function EFFECT:Init(data)
         if particle then
             particle:SetVelocity(addvel)
             particle:SetLifeTime(0)
-            particle:SetDieTime(math.Rand(0.05, 0.1))
+            particle:SetDieTime(.101)
             particle:SetStartAlpha(math.Rand(150, 200))
-            particle:SetEndAlpha(0)
+            particle:SetEndAlpha(math.Rand(100, 150))
             particle:SetStartSize(math.Rand(8, 7))
-            particle:SetEndSize(math.Rand(2, 5))
+            particle:SetEndSize(math.Rand(6, 7))
             particle:SetLighting(false)
             particle:SetRoll(math.random(0, 360))
             particle:SetColor(255, 255, 255)
@@ -51,9 +51,9 @@ function EFFECT:Init(data)
             particle:SetLifeTime(0)
             particle:SetDieTime(math.Rand(1, 1.5))
             particle:SetStartAlpha(math.Rand(20, 25) * (4 - quality))
-            particle:SetEndAlpha(math.Rand(20, 25) * (4 - quality))
-            particle:SetStartSize(math.Rand(2, 6)+pwpn:GetBurstCount())
-            particle:SetEndSize(math.Rand(6, 12)+pwpn:GetBurstCount())
+            particle:SetEndAlpha(math.Rand(10, 20) * (4 - quality))
+            particle:SetStartSize(0+pwpn:GetBurstCount())
+            particle:SetEndSize(math.Rand(6, 7)+pwpn:GetBurstCount())
             particle:SetRoll(math.rad(90*math.random(0, 3)))
             particle:SetRollDelta(0)
             particle:SetLighting(true)

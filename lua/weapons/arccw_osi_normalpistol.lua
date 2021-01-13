@@ -71,6 +71,7 @@ SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/normal pistol/pistoldistnope.wav"
 
+SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_pistol"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"

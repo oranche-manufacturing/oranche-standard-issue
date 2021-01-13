@@ -32,7 +32,7 @@ function EFFECT:Init(data)
         if particle then
             particle:SetVelocity(addvel)
             particle:SetLifeTime(0)
-            particle:SetDieTime(.1)
+            particle:SetDieTime(.12)
             particle:SetStartAlpha(math.Rand(150, 200))
             particle:SetEndAlpha(0)
             particle:SetStartSize(math.Rand(14, 16))
