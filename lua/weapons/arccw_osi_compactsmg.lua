@@ -12,9 +12,9 @@ SWEP.Trivia_Country= "Israel"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 2
 
-SWEP.ViewModel= "models/weapons/arccw_osi/smg.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/compact smg.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/smg.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/compact smg.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -92,8 +92,8 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.07, 0, 1.28),
-    Ang = Angle(-1.7, 0, 0),
+    Pos = Vector(-2.9, -4, 1.14),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.2,
     SwitchToSound = "",
     SwitchFromSound = "",
@@ -104,10 +104,10 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "rpg"
 
-SWEP.ActivePos = Vector(0, -2, 1)
+SWEP.ActivePos = Vector(0.25, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0, -2, 1)
+SWEP.HolsterPos = Vector(0.25, -2, 1)
 SWEP.HolsterAng = Angle(-5, 10, 0)
 
 SWEP.SprintPos = Vector(0, 0, 1)
@@ -172,31 +172,31 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        Time = nil,
-        MinProgress = 2,
+        Time = 2.25,
+        MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.9},
+						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.5},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.3},
 					},
     },
 	["reload_empty"] = {
         Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        Time = nil,
-        MinProgress = 2,
+        Time = 3,
+        MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.9},
-						{s = "weapons/arccw_osi/smg/smg_chback.wav", 	t = 2.4},
-						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.8},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.2},
+						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.5},
+						{s = "weapons/arccw_osi/smg/smg_chback.wav", 	t = 2.0},
+						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.35},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},
     },
     ["enter_sprint"] = {

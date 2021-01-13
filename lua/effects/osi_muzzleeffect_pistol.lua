@@ -9,7 +9,7 @@ end
 function EFFECT:Init(data)
     local quality = GetConVar("arccw_osi_particlequality"):GetInt()
 
-    if quality == 1 then return end
+    if quality == 0 then return end
 
     local wpn = data:GetEntity()
     if !IsValid(wpn) then return end
