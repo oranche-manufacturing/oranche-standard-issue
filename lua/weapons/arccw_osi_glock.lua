@@ -3,7 +3,7 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "C&N 18P"
+SWEP.PrintName= "C&N 17P"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Pistol"
 SWEP.Trivia_Desc= "The good ol days of Crowdley & Nelson back in Austria. Might not be old, but it sure has its place among modern pistols. (If you disagree, we'll sue you.)"
@@ -23,9 +23,9 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.25, 1.25, 1.25),
 }
 
-SWEP.Damage= 15
-SWEP.DamageMin= 5
-SWEP.Range= 15 -- metres
+SWEP.Damage= 25
+SWEP.DamageMin= 10
+SWEP.Range= 21 -- metres
 SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
@@ -33,20 +33,20 @@ SWEP.ShootEntity= nil
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 18
+SWEP.Primary.ClipSize = 17
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 30
+SWEP.ExtendedClipSize = 33
 SWEP.ReducedClipSize = 8
 
 SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
 SWEP.Recoil = 0.5 -- vertical recoil
-SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
+SWEP.RecoilSide = 0.5 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 1200 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
-        Mode = 2,
+        Mode = 1,
     },
     {
         Mode = 0

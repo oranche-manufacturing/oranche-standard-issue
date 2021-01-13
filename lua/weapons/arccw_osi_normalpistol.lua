@@ -6,8 +6,8 @@ SWEP.AdminOnly= false
 SWEP.PrintName= "Cobra .45"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Pistol"
-SWEP.Trivia_Desc= "A century-old .45 pistol that lives up to its age with ease of use and service history."
-SWEP.Trivia_Manufacturer= "Federal Arms"
+SWEP.Trivia_Desc= "Nothing more classic than the Cobra: The hero of the free world! Modern pistols jam, break, and are made of plastic. The Cobra is anything but. Joe Brownie knows best"
+SWEP.Trivia_Manufacturer= "Federal Surplus Ind."
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= ".45 ACP"
 SWEP.Slot= 1
@@ -39,8 +39,8 @@ SWEP.ExtendedClipSize = 16
 SWEP.ReducedClipSize = 8
 
 SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
-SWEP.Recoil = 0.5 -- vertical recoil
-SWEP.RecoilSide = 0.3 -- horizontal recoil (this is harder/more random to control!)
+SWEP.Recoil = 1 -- vertical recoil
+SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 400 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
@@ -56,7 +56,7 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 15 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
