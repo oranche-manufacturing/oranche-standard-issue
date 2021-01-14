@@ -24,7 +24,8 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.Damage= 40
-SWEP.DamageMin= 20
+SWEP.DamageMin= 25
+SWEP.RangeMin= 40 -- metres
 SWEP.Range= 80 -- metres
 SWEP.Penetration= 10 -- millimetres
 SWEP.DamageType= DMG_BULLET

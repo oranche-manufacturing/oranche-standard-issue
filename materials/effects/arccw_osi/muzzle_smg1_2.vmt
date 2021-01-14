@@ -2,7 +2,7 @@
 {
 	//"$basetexture" "effects/combinemuzzle1"
 	"$basetexture" "effects/arccw_osi/muzzle_smg1_2"
-	"$additive" "0"
+	"$additive" "1"
 	"$vertexalpha" "1"
 	"$vertexcolor" 1
 	"$translucent" "1"
