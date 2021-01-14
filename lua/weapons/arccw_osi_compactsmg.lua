@@ -23,8 +23,11 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.5, 1.5, 1.5),
 }
 
+SWEP.DefaultBodygroups = "00" -- 01 for no stock
+
 SWEP.Damage= 26
 SWEP.DamageMin= 19
+SWEP.RangeMin= 20 -- metres
 SWEP.Range= 55 -- metres
 SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
