@@ -32,7 +32,7 @@ SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
-SWEP.ChamberSize = 1 -- remember to not be an idiot
+SWEP.ChamberSize = 0 -- remember to not be an idiot (oranche what the fuck dude we told you not to be an idiot)
 SWEP.Primary.ClipSize = 32
 -- cs+ style clip extenders
 SWEP.ExtendedClipSize = 48
