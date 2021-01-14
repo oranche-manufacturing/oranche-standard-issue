@@ -16,8 +16,8 @@ SWEP.WorldModel = Model( "models/weapons/w_medkit.mdl" )
 SWEP.ViewModelFOV = 54
 SWEP.UseHands = true
 
-SWEP.Primary.ClipSize = 20
-SWEP.Primary.DefaultClip = 20
+SWEP.Primary.ClipSize = 25
+SWEP.Primary.DefaultClip = 25
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "none"
 
@@ -27,7 +27,7 @@ SWEP.Secondary.Automatic = true
 SWEP.Secondary.Ammo = "none"
 
 SWEP.HealAmount = 1 -- Maximum heal amount per use
-SWEP.MaxAmmo = 20 -- Maxumum ammo
+SWEP.MaxAmmo = 25 -- Maxumum ammo
 
 local HealSound = Sound( "HealthKit.Touch" )
 local DenySound = Sound( "WallHealth.Deny" )
@@ -81,14 +81,7 @@ function SWEP:PrimaryAttack()
 
 		-- Even though the viewmodel has looping IDLE anim at all times, we need this to make fire animation work in multiplayer
 		timer.Create( "weapon_idle" .. self:EntIndex(), self:SequenceDuration(), 1, function() if ( IsValid( self ) ) then self:SendWeaponAnim( ACT_VM_IDLE ) end end )
-
-	else
-
-		self.Owner:EmitSound( "weapons/arccw_osi/tick4.wav" )
-		self:SetNextPrimaryFire( CurTime() + .5 )
-
 	end
-
 end
 
 function SWEP:SecondaryAttack()
@@ -115,26 +108,7 @@ function SWEP:SecondaryAttack()
 		self.Owner:SetAnimation( PLAYER_ATTACK1 )
 
 		timer.Create( "weapon_idle" .. self:EntIndex(), self:SequenceDuration(), 1, function() if ( IsValid( self ) ) then self:SendWeaponAnim( ACT_VM_IDLE ) end end )
-
-	else
-
-		ent:EmitSound( "weapons/arccw_osi/tick4.wav" )
-		self:SetNextSecondaryFire( CurTime() + .5 )
-
 	end
-
-end
-
-function SWEP:DrawHUD()
-	surface.SetFont("ArcCW_26")
-	surface.SetTextPos(ScrW() / 2, 50 + 26 * 0)
-	surface.SetTextColor(255, 255, 255, 255)
-	surface.DrawText(self:GetOwner():Health())
-	
-	surface.SetFont("ArcCW_26")
-	surface.SetTextPos(ScrW() / 2, 50 + 26 * 4)
-	surface.SetTextColor(255, 255, 255, 255)
-	surface.DrawText(math.ceil((self:GetOwner():Health()/self:GetOwner():GetMaxHealth())*3))
 end
 
 function SWEP:OnRemove()
