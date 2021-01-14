@@ -159,7 +159,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.12},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.2},
 					},
     },
@@ -170,7 +170,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.12},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.2},
 					},
     },
@@ -184,7 +184,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.5},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.7},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.65},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.9},
 					},
     },
@@ -208,7 +208,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.3},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.5},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.45},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.7},
 					},
     },
@@ -218,7 +218,7 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.2},
+						{s = shellinsertsound, 	                    t = 0.12},
 					},
     },
     ["reload_2"] = {
@@ -227,8 +227,8 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.2},
-						{s = shellinsertsound, 	                    t = 0.8},
+						{s = shellinsertsound, 	                    t = 0.12},
+						{s = shellinsertsound, 	                    t = 0.675},
 					},
     },
     ["reload_3"] = {
@@ -237,9 +237,9 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.2},
-						{s = shellinsertsound, 	                    t = 0.8},
-						{s = shellinsertsound, 	                    t = 1.4},
+						{s = shellinsertsound, 	                    t = 0.12},
+						{s = shellinsertsound, 	                    t = 0.675},
+						{s = shellinsertsound, 	                    t = 1.2},
 					},
     },
     ["reload_4"] = {
@@ -248,10 +248,10 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.2},
-						{s = shellinsertsound, 	                    t = 0.8},
-						{s = shellinsertsound, 	                    t = 1.4},
-						{s = shellinsertsound, 	                    t = 1.9},
+						{s = shellinsertsound, 	                    t = 0.12},
+						{s = shellinsertsound, 	                    t = 0.675},
+						{s = shellinsertsound, 	                    t = 1.2},
+						{s = shellinsertsound, 	                    t = 1.675},
 					},
     },
     ["reload_5"] = {
@@ -260,11 +260,11 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.2},
-						{s = shellinsertsound, 	                    t = 0.8},
-						{s = shellinsertsound, 	                    t = 1.4},
-						{s = shellinsertsound, 	                    t = 1.9},
-						{s = shellinsertsound, 	                    t = 2.4},
+						{s = shellinsertsound, 	                    t = 0.12},
+						{s = shellinsertsound, 	                    t = 0.675},
+						{s = shellinsertsound, 	                    t = 1.2},
+						{s = shellinsertsound, 	                    t = 1.675},
+						{s = shellinsertsound, 	                    t = 2.2},
 					},
     },
     ["enter_sprint"] = {
