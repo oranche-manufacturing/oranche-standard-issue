@@ -77,6 +77,7 @@ SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/pistol shell.mdl"
 SWEP.ShellScale = 0.75
+SWEP.ShellPhysScale = 1.5
 SWEP.ShellSounds = ArcCW.OSI.Shells_LowCal
 SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
 

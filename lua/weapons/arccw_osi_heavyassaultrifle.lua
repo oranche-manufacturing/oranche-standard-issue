@@ -75,8 +75,10 @@ SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
-SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellScale = 1.5
+SWEP.ShellModel = "models/weapons/arccw_osi/effects/rifle shell.mdl"
+SWEP.ShellScale = 0.75
+SWEP.ShellPhysScale = 1.5
+SWEP.ShellSounds = ArcCW.OSI.Shells_MedCal
 SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
