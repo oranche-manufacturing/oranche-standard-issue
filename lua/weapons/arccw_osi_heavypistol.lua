@@ -24,9 +24,9 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.Damage= 55
-SWEP.DamageMin= 24
-SWEP.Range= 36 -- metres
-SWEP.Penetration= 6 -- millimetres
+SWEP.DamageMin= 35
+SWEP.Range= 35 -- metres
+SWEP.Penetration= 8 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
@@ -35,14 +35,14 @@ SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
 SWEP.Primary.ClipSize = 9
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 12
+SWEP.ExtendedClipSize = 15
 SWEP.ReducedClipSize = 7
 
-SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
+SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
 SWEP.Recoil = 3 -- vertical recoil
 SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 210 -- 60 / RPM
+SWEP.Delay = 60 / 500 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -56,15 +56,15 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 150 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 250 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "357"
 
-SWEP.ShootVol = 115 -- volume of shoot sound
+SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/magnumfire.wav"
@@ -81,11 +81,11 @@ SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.300
-SWEP.SpeedMult = 0.90
+SWEP.SightTime = 0.225
+SWEP.SpeedMult = 0.975
 SWEP.SightedSpeedMult = 0.75
 
-SWEP.BarrelLength = 10
+SWEP.BarrelLength = 0
 
 SWEP.BulletBones = {}
 SWEP.CaseBones = {}

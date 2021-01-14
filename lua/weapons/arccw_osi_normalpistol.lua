@@ -6,7 +6,7 @@ SWEP.AdminOnly= false
 SWEP.PrintName= "Cobra .45"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Pistol"
-SWEP.Trivia_Desc= "Nothing more classic than the Cobra: The hero of the free world! Modern pistols jam, break, and are constructed from plastic. The Cobra is anything but. Joe Brownie knows best"
+SWEP.Trivia_Desc= "Nothing more classic than the Cobra: The hero of the free world! Modern pistols jam, break, and are constructed from plastic. The Cobra is anything but. Joe Brownie knows best."
 SWEP.Trivia_Manufacturer= "Federal Surplus Ind."
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= ".45 ACP"
@@ -23,26 +23,26 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.25, 1.25, 1.25),
 }
 
-SWEP.Damage= 45
-SWEP.DamageMin= 15
-SWEP.Range= 32 -- metres
-SWEP.Penetration= 4 -- millimetres
+SWEP.Damage= 35
+SWEP.DamageMin= 20
+SWEP.Range= 35 -- metres
+SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 7
+SWEP.Primary.ClipSize = 12
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 16
+SWEP.ExtendedClipSize = 24
 SWEP.ReducedClipSize = 8
 
 SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
-SWEP.Recoil = 1 -- vertical recoil
-SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
+SWEP.Recoil = 0.9 -- vertical recoil
+SWEP.RecoilSide = 0.4 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 400 -- 60 / RPM
+SWEP.Delay = 60 / 600 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -57,10 +57,10 @@ SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
 SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 250 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
-SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
+SWEP.JumpDispersion = 250 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "pistol"
 
@@ -82,10 +82,10 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SightTime = 0.175
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.80
+SWEP.SpeedMult = 1
+SWEP.SightedSpeedMult = 0.75
 
-SWEP.BarrelLength = 10
+SWEP.BarrelLength = 0
 
 SWEP.BulletBones = {}
 SWEP.CaseBones = {}

@@ -23,9 +23,9 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.5, 1.5, 1.5),
 }
 
-SWEP.Damage= 27
-SWEP.DamageMin= 15
-SWEP.Range= 45 -- metres
+SWEP.Damage= 26
+SWEP.DamageMin= 19
+SWEP.Range= 55 -- metres
 SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
@@ -38,9 +38,9 @@ SWEP.Primary.ClipSize = 32
 SWEP.ExtendedClipSize = 48
 SWEP.ReducedClipSize = 12
 
-SWEP.VisualRecoilMult = 1.0 -- throw the viewmodel how far back
-SWEP.Recoil = 0.2 -- vertical recoil
-SWEP.RecoilSide = 0.4 -- horizontal recoil (this is harder/more random to control!)
+SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
+SWEP.Recoil = 0.3 -- vertical recoil
+SWEP.RecoilSide = 0.2 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 600 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
@@ -57,14 +57,14 @@ SWEP.NPCWeaponType = "weapon_smg"
 SWEP.NPCWeight = 100 -- 100 in the center
 
 SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 50 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 100 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 100 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "pistol"
 
-SWEP.ShootVol = 80 -- volume of shoot sound
+SWEP.ShootVol = 100 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.FirstShootSound = "weapons/arccw_osi/compact smg the sequel/csmg2_first.wav"
@@ -82,7 +82,7 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.200
+SWEP.SightTime = 0.20
 SWEP.SpeedMult = 0.95
 SWEP.SightedSpeedMult = 0.90
 

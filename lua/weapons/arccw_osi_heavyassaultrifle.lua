@@ -23,10 +23,10 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.1, 1.1, 1.1),
 }
 
-SWEP.Damage= 38
-SWEP.DamageMin= 26
-SWEP.Range= 75 -- metres
-SWEP.Penetration= 8 -- millimetres
+SWEP.Damage= 35
+SWEP.DamageMin= 25
+SWEP.Range= 100 -- metres
+SWEP.Penetration= 10 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
@@ -35,12 +35,12 @@ SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot
 SWEP.Primary.ClipSize = 30
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 60
-SWEP.ReducedClipSize = 15
+SWEP.ExtendedClipSize = 45
+SWEP.ReducedClipSize = 10
 
 SWEP.VisualRecoilMult = 1.0 -- throw the viewmodel how far back
-SWEP.Recoil = 0.7 -- vertical recoil
-SWEP.RecoilSide = 1.2 -- horizontal recoil (this is harder/more random to control!)
+SWEP.Recoil = 0.65 -- vertical recoil
+SWEP.RecoilSide =  0.75 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 600 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
@@ -56,15 +56,15 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 400 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 700 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
-SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
+SWEP.JumpDispersion = 350 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "ar2"
 
-SWEP.ShootVol = 80 -- volume of shoot sound
+SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
@@ -81,11 +81,11 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.400
-SWEP.SpeedMult = 0.80
-SWEP.SightedSpeedMult = 0.75
+SWEP.SightTime = 0.30
+SWEP.SpeedMult = 0.90
+SWEP.SightedSpeedMult = 0.5
 
-SWEP.BarrelLength = 10
+SWEP.BarrelLength = 0
 
 SWEP.BulletBones = {}
 SWEP.CaseBones = {}
