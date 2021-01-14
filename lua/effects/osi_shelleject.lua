@@ -20,7 +20,7 @@ EFFECT.SpawnTime = 0
 function EFFECT:Init(data)
     local quality = GetConVar("arccw_osi_particlequality"):GetInt()
 
-    if quality == 0 then return end
+    --if quality == 0 then return end
 
     local att = data:GetAttachment()
     local ent = data:GetEntity()
@@ -112,7 +112,7 @@ function EFFECT:Init(data)
 
     local emitter = ParticleEmitter(origin)
     local particle = emitter:Add(TableRandomChoice(images_smoke), origin)
-    if (particle) then
+    if (particle) and quality > 0 then
         particle:SetVelocity(Vector(ang:Up()*4, 0, 0) + plyvel) 
         particle:SetLifeTime(0)
         particle:SetDieTime(1)
