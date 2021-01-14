@@ -183,7 +183,8 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.15},
 						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.3},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
     },
 	["reload_empty"] = {
@@ -199,6 +200,7 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
 						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	t = 1.95},
 						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 2.20},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},
     },
