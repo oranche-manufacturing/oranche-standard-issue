@@ -70,7 +70,7 @@ SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/normal pistol/pistoldistnope.wav"
+SWEP.DistantShootSound = nil
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_pistol"

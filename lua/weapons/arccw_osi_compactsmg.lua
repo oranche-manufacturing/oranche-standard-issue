@@ -18,8 +18,8 @@ SWEP.WorldModel= "models/weapons/arccw_osi/compact smg.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos = Vector(-7, 4, -3),
-    ang = Angle(-10, 0, 180),
+    pos = Vector(-10.5, 5, -3.5),
+    ang = Angle(-10, 5, 180),
     scale = Vector(1.5, 1.5, 1.5),
 }
 
@@ -104,7 +104,7 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "smg"
+SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.ActivePos = Vector(0.25, -2, 1)
