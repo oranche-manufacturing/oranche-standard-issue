@@ -1,4 +1,5 @@
 local images_muzzle = {"effects/arccw_osi/muzzle_pistol_heavy1_1","effects/arccw_osi/muzzle_pistol_heavy1_2","effects/arccw_osi/muzzle_pistol_heavy1_3","effects/arccw_osi/muzzle_pistol_heavy1_4"}
+local images_muzzle2 = {"effects/arccw_osi/muzzle_shotgun1_1"}
 local images_smoke = {"effects/arccw_osi/smoke1_1","effects/arccw_osi/smoke1_2","effects/arccw_osi/smoke1_3","effects/arccw_osi/smoke1_4",}
 local images_distort = {"sprites/heatwave"}
 
@@ -27,7 +28,7 @@ function EFFECT:Init(data)
     local emitter = ParticleEmitter(pos)
 
     if !wpn.Suppressed and !wpn.FlashHidden then
-        local particle = emitter:Add("effects/arccw_osi/muzzle_shotgun1_1", pos)
+        local particle = emitter:Add(TableRandomChoice(images_muzzle2), pos)
 
         if particle then
             particle:SetVelocity(addvel)
