@@ -65,7 +65,7 @@ SWEP.JumpDispersion = 300 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "357"
 
-SWEP.ShootVol = 120 -- volume of shoot sound
+SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/magnumfire.wav"

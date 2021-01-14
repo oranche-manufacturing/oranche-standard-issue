@@ -67,12 +67,12 @@ SWEP.JumpDispersion = 100 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "pistol"
 
-SWEP.ShootVol = 100 -- volume of shoot sound
+SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.FirstShootSound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
 SWEP.ShootSound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/csmg2_sup.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/csmg2_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"

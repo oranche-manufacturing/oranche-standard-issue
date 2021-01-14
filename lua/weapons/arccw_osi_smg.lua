@@ -65,7 +65,7 @@ SWEP.JumpDispersion = 100 -- dispersion penalty when in the air
 
 SWEP.Primary.Ammo = "pistol"
 
-SWEP.ShootVol = 100 -- volume of shoot sound
+SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/smg/smg_fire.wav"
