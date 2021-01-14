@@ -116,6 +116,9 @@ SWEP.HolsterAng = Angle(-5, 10, 0)
 SWEP.SprintPos = Vector(0, 0, 1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
+SWEP.CustomizePos = Vector(5, -2, -2)
+SWEP.CustomizeAng = Angle(15, 30, 10)
+
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
@@ -156,21 +159,22 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "pullout",
-        Time = nil,
+        Time = 0.25,
     },
     ["ready"] = {
         Source = "pullout_first",
-        Time = nil,
+        Time = 1.5,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.1},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.6},
+						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	    t = 0.50},
+						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 0.80},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
 					},
     },
     ["holster"] = {
         Source = "putaway",
-        Time = nil,
+        Time = 0.25,
     },
     ["reload"] = {
         Source = "reload",
