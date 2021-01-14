@@ -124,7 +124,17 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+	{
+		PrintName= "Muzzle",
+		Slot= {"osi_suppressor","osi_device"},
+		Bone= "j_gun",
+		Offset= {
+			vpos = Vector(8, 0, 1.35),
+			vang = Angle(0, 0, 0),
+		},	
+	},
+}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
