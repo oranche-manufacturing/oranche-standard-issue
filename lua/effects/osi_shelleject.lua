@@ -103,9 +103,10 @@ function EFFECT:Init(data)
     phys:Wake()
     phys:SetDamping(0, 0)
     phys:SetMass(1)
+    phys:SetBuoyancyRatio(12)
     phys:SetMaterial("gmod_silent")
 
-    phys:SetVelocity((dir * mag * math.Rand(1, 2)) + plyvel)
+    phys:SetVelocity((dir * mag * math.Rand(0.8, 1.6)) + plyvel)
     phys:AddAngleVelocity(VectorRand() * 400)
 
     self.HitPitch = self.Pitch + math.Rand(-5,5)

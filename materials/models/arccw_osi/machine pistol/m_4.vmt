@@ -1,0 +1,9 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/machine pistol/m_4"
+	$selfillummask "models/arccw_osi/machine pistol/m_4_si"
+	$selfillum 1
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+}

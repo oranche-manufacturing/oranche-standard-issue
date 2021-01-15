@@ -3,18 +3,18 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "Galzi-9"
+SWEP.PrintName= "MAC-11 machine pistol"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "SMG"
-SWEP.Trivia_Desc= "Hollywood film stars, criminals, military; it has served them all - and it will serve you just fine. No refunds."
+SWEP.Trivia_Desc= "Yuh . aye. aye ae yuh yuh yuh\nyuj aye ayae aye aye\nYuh. We be makin. Y8uh.  Afucking mod, ... Yuh.\nWe fuckin (Yeah) Fuckin yo mom (yuh yuh YUH)."
 SWEP.Trivia_Manufacturer= "Star Of David Inc."
 SWEP.Trivia_Country= "Israel"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 2
 
-SWEP.ViewModel= "models/weapons/arccw_osi/compact smg.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/machine pistol.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/compact smg.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/machine pistol.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -45,7 +45,7 @@ SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
 SWEP.Recoil = 0.3 -- vertical recoil
 SWEP.RecoilSide = 0.2 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 600 -- 60 / RPM
+SWEP.Delay = 60 / 1100 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -70,29 +70,15 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
-SWEP.ShootSound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/glock/glock fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/csmg2_sup.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/csmg2_dist.wav"
-
-SWEP.Hook_GetShootSound = function(wep, sound)
-    local thatsound
-    if (wep:GetBurstCount() % 3 == 1) then
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
-    elseif (wep:GetBurstCount() % 3 == 2) then
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
-    else
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
-    end
-	
-    return thatsound
-end
+SWEP.DistantShootSound = "weapons/arccw_osi/glock/glock dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
-SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
+SWEP.MuzzleEffect = "osi_muzzleeffect_mac11"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/pistol shell.mdl"
-SWEP.ShellScale = 0.67
+SWEP.ShellScale = 0.5
 SWEP.ShellPhysScale = 1.5
 SWEP.ShellSounds = ArcCW.OSI.Shells_LowCal
 SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
@@ -110,7 +96,7 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.89, -4, 1.14),
+    Pos = Vector(-2.65, 2, 0.72),
     Ang = Angle(0, 0, 0),
     Magnification = 1.2,
     SwitchToSound = "",
@@ -122,13 +108,13 @@ SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
-SWEP.ActivePos = Vector(0.25, -2, 1)
+SWEP.ActivePos = Vector(0.75, 2, 0.75)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.25, -2, 1)
+SWEP.HolsterPos = Vector(0.75, 2, 0.75)
 SWEP.HolsterAng = Angle(-5, 10, 0)
 
-SWEP.SprintPos = Vector(0, 0, 1)
+SWEP.SprintPos = Vector(0, 0, 0.75)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(5, -2, -2)
@@ -145,7 +131,7 @@ SWEP.Attachments = {
 		Slot= {"osi_suppressor","osi_device"},
 		Bone= "j_gun",
 		Offset= {
-			vpos = Vector(8, 0, 1.35),
+			vpos = Vector(4.5, 0, 2),
 			vang = Angle(0, 0, 0),
 		},	
 	},
@@ -208,10 +194,10 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.15},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	            t = 1.4},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.6},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
@@ -223,12 +209,11 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magout.wav", 	t = 0.30},
+						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.30},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	t = 1.95},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 2.20},
+						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/glock/glock_chamber.wav", 	t = 2.20},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},

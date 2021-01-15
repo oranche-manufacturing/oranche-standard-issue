@@ -210,7 +210,7 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
 						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.87},
 						{s = "weapons/arccw_osi/smg/smg_chback.wav", 	t = 2.4},
-						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.73},
+						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.8},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.2},
 					},
     },
