@@ -84,9 +84,9 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.400
-SWEP.SpeedMult = 0.80
-SWEP.SightedSpeedMult = 0.65
+SWEP.SightTime = 0.33
+SWEP.SpeedMult = 0.94
+SWEP.SightedSpeedMult = 0.33
 
 SWEP.BarrelLength = 10
 
