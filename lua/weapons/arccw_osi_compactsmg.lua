@@ -75,6 +75,17 @@ SWEP.ShootSound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/csmg2_sup.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/csmg2_dist.wav"
 
+SWEP.Hook_GetShootSound = function(wep, sound)
+    local thatsound
+    if (wep:GetBurstCount() % 2 == 1) then
+        thatsound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
+    else
+        thatsound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
+    end
+	
+    return thatsound
+end
+
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects

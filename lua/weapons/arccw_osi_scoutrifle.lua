@@ -73,7 +73,7 @@ SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/scrifle/scrifle_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
-SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
+SWEP.MuzzleEffect = "osi_muzzleeffect_rifle"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/rifle shell.mdl"
 SWEP.ShellScale = 0.75
