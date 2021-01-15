@@ -14,7 +14,9 @@ SWEP.Slot= 2
 
 SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/heavy assault rifle worldmodel.mdl"
+SWEP.MirrorWorldModel = "models/weapons/arccw_osi/heavy assault rifle worldmodel.mdl"
+
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
