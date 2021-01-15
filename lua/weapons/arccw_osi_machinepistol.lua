@@ -3,12 +3,12 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "MAC-11 machine pistol"
+SWEP.PrintName= "MAZ1"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "SMG"
-SWEP.Trivia_Desc= "Yuh . aye. aye ae yuh yuh yuh\nyuj aye ayae aye aye\nYuh. We be makin. Y8uh.  Afucking mod, ... Yuh.\nWe fuckin (Yeah) Fuckin yo mom (yuh yuh YUH)."
-SWEP.Trivia_Manufacturer= "Star Of David Inc."
-SWEP.Trivia_Country= "Israel"
+SWEP.Trivia_Desc= "Pullin' up on them has never been so easy. I hope you don' mind where we got the labor from."
+SWEP.Trivia_Manufacturer= "Trash Compact"
+SWEP.Trivia_Country= "Detroit"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 2
 
@@ -25,10 +25,10 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "00" -- 01 for no stock
 
-SWEP.Damage= 26
-SWEP.DamageMin= 19
-SWEP.RangeMin= 20 -- metres
-SWEP.Range= 55 -- metres
+SWEP.Damage= 24
+SWEP.DamageMin= 16
+SWEP.RangeMin= 10 -- metres
+SWEP.Range= 30 -- metres
 SWEP.Penetration= 3 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
@@ -42,7 +42,7 @@ SWEP.ExtendedClipSize = 48
 SWEP.ReducedClipSize = 12
 
 SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
-SWEP.Recoil = 0.3 -- vertical recoil
+SWEP.Recoil = 0.5 -- vertical recoil
 SWEP.RecoilSide = 0.2 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 1100 -- 60 / RPM
@@ -59,9 +59,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_smg"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 10 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 100 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 20 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 250 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 100 -- dispersion penalty when in the air
 
@@ -87,8 +87,8 @@ SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
 SWEP.SightTime = 0.20
-SWEP.SpeedMult = 0.95
-SWEP.SightedSpeedMult = 0.90
+SWEP.SpeedMult = 1
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.BarrelLength = 10
 
