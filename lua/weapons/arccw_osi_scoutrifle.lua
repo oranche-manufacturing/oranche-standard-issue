@@ -23,11 +23,11 @@ SWEP.WorldModelOffset = {
     scale = Vector(1.5, 1.5, 1.5),
 }
 
-SWEP.Damage= 40
+SWEP.Damage= 36
 SWEP.DamageMin= 25
 SWEP.RangeMin= 40 -- metres
-SWEP.Range= 80 -- metres
-SWEP.Penetration= 10 -- millimetres
+SWEP.Range= 130 -- metres
+SWEP.Penetration= 8 -- millimetres
 SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
@@ -40,10 +40,10 @@ SWEP.ExtendedClipSize = 30
 SWEP.ReducedClipSize = 10
 
 SWEP.VisualRecoilMult = 1.0 -- throw the viewmodel how far back
-SWEP.Recoil = 0.75 -- vertical recoil
+SWEP.Recoil = 0.4 -- vertical recoil
 SWEP.RecoilSide = 0.2 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 300 -- 60 / RPM
+SWEP.Delay = 60 / 800 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
@@ -57,9 +57,9 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 3 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 300 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
+SWEP.AccuracyMOA = 1 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 1000 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 100 -- dispersion penalty when in the air
 
