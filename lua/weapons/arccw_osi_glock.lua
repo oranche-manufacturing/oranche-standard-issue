@@ -139,7 +139,7 @@ SWEP.Animations = {
         Time = nil,
     },
     ["fire"] = {
-        Source = "fire",
+        Source = "fire_ads",
         Time = nil,
         ShellEjectAt = 0,
     },
@@ -151,34 +151,21 @@ SWEP.Animations = {
 					},
         ShellEjectAt = 0,
     },
-	["fire_iron"] = {
-        Source = "fire_ads",
-        Time = nil,
-        ShellEjectAt = 0,
-    },
-    ["fire_iron_empty"] = {
-        Source = "fire_last",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/pistol_last.wav", 	                    t = 0},
-					},
-        ShellEjectAt = 0,
-    },
     ["draw"] = {
         Source = "pullout",
-        Time = nil,
+        Time = 0.5,
     },
     ["draw_empty"] = {
-        Source = "draw_empty",
-        Time = nil,
+        Source = "pullout_empty",
+        Time = 0.5,
     },
     ["holster"] = {
         Source = "putaway",
-        Time = nil,
+        Time = 0.5,
     },
     ["holster_empty"] = {
         Source = "putaway_empty",
-        Time = nil,
+        Time = 0.5,
     },
     ["reload"] = {
         Source = "reload",
@@ -213,7 +200,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint_loop",
-        Time = 30/40,
+        Time = 0.67,
     },
     ["exit_sprint"] = {
         Source = "pullout",
@@ -225,7 +212,7 @@ SWEP.Animations = {
     },
     ["idle_sprint_empty"] = {
         Source = "sprint_loop_empty",
-        Time = 30/40,
+        Time = 0.67,
     },
     ["exit_sprint_empty"] = {
         Source = "pullout_empty",
