@@ -12,9 +12,11 @@ SWEP.Trivia_Country= "Austria"
 SWEP.Trivia_Calibre= "9x19mm"
 SWEP.Slot= 1
 
-SWEP.ViewModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.DefaultBodygroups = "00000" -- 01 for no stock
+
+SWEP.ViewModel= "models/weapons/arccw_osi/glock.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/normal pistol.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/glock.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -94,28 +96,31 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-1.76, 0, 1.24),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-2.05, 0, 1.2),
+    Ang = Angle(-1.3745, 0.1105, 0.1176),
     Magnification = 1.0,
     SwitchToSound = "",
     SwitchFromSound = "",
+    CrosshairInSights = false,
 }
 
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"
 
+local correct = Angle(-1.3745, 0.1105, 0.1176)
+
 SWEP.ActivePos = Vector(0, 0, 1)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActiveAng = Angle(0, 0, 0) + correct
 
 SWEP.HolsterPos = Vector(-0, 0, 1)
-SWEP.HolsterAng = Angle(-5, 10, 0)
+SWEP.HolsterAng = Angle(-5, 10, 0) + correct
 
-SWEP.SprintPos = Vector(0, 0, 1)
+SWEP.SprintPos = Vector(1, 1, 1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(5, -2, -2)
-SWEP.CustomizeAng = Angle(15, 30, 10)
+SWEP.CustomizeAng = Angle(15, 30, 10) + correct
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -126,20 +131,20 @@ SWEP.Attachments = {}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
-        Source = "reg_idle",
+        Source = "idle",
         Time = nil,
     },
     ["idle_empty"] = {
-        Source = "reg_idle_empty",
+        Source = "idle_empty",
         Time = nil,
     },
     ["fire"] = {
-        Source = "reg_fire",
+        Source = "fire",
         Time = nil,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
-        Source = "reg_fire_last",
+        Source = "fire_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/pistol_last.wav", 	                    t = 0},
@@ -147,12 +152,12 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
 	["fire_iron"] = {
-        Source = "reg_fire_ads",
+        Source = "fire_ads",
         Time = nil,
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
-        Source = "reg_fire_ads_last",
+        Source = "fire_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/pistol_last.wav", 	                    t = 0},
@@ -160,97 +165,71 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["draw"] = {
-        Source = "reg_draw",
+        Source = "pullout",
         Time = nil,
     },
     ["draw_empty"] = {
-        Source = "reg_draw_empty",
+        Source = "draw_empty",
         Time = nil,
     },
     ["holster"] = {
-        Source = "reg_holster",
+        Source = "putaway",
         Time = nil,
     },
     ["holster_empty"] = {
-        Source = "reg_holster_empty",
+        Source = "putaway_empty",
         Time = nil,
     },
     ["reload"] = {
-        Source = "reg_reload",
+        Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 1.6*1.09375,
+        MinProgress = 0.8,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 1},
+						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 0.8},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
 					},
     },
 	["reload_empty"] = {
-        Source = "reg_reload_empty",
+        Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = nil,
-        MinProgress = 1.25,
+        Time = 1.96*1.09375,
+        MinProgress = 0.8,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 1},
-						{s = "weapons/arccw_osi/glock/glock_chamber.wav", 	t = 1.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
-					},
-    },
-    ["exit_inspect"] = {
-        Source = "reg_inspect",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
-						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
-						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
-						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
-					},
-    },
-    ["exit_inspect_empty"] = {
-        Source = "reg_inspect_empty",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
-						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
-						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
-						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
+						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/glock/glock_chamber.wav", 	t = 1.4},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.6},
 					},
     },
     ["enter_sprint"] = {
-        Source = "reg_sprint_in",
-        Time = nil,
+        Source = "putaway",
+        Time = 0.33,
     },
     ["idle_sprint"] = {
-        Source = "reg_sprint",
-        Time = nil,
+        Source = "sprint_loop",
+        Time = 30/40,
     },
     ["exit_sprint"] = {
-        Source = "reg_sprint_out",
-        Time = nil,
+        Source = "pullout",
+        Time = 0.33,
     },
 	["enter_sprint_empty"] = {
-        Source = "reg_sprint_in_empty",
-        Time = nil,
+        Source = "putaway_empty",
+        Time = 0.33,
     },
     ["idle_sprint_empty"] = {
-        Source = "reg_sprint_empty",
-        Time = nil,
+        Source = "sprint_loop_empty",
+        Time = 30/40,
     },
     ["exit_sprint_empty"] = {
-        Source = "reg_sprint_out_empty",
-        Time = nil,
+        Source = "pullout_empty",
+        Time = 0.33,
     },
 }
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL

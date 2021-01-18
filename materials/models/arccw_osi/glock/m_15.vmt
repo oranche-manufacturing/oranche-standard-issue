@@ -1,0 +1,10 @@
+VertexLitGeneric
+{
+	$basetexture "models/arccw_osi/glock/m_15"
+	$phong 1
+	$phongboost 5
+	$phongexponent 20
+	$envmap env_cubemap
+	$envmaptint "[.67 .5 .34]"
+	$envmapfresnel 1
+}
