@@ -18,7 +18,7 @@ SWEP.WorldModel= "models/weapons/arccw_osi/machine pistol.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    pos = Vector(-10.5, 5, -3.5),
+    pos = Vector(-7, 5, -4),
     ang = Angle(-10, 5, 180),
     scale = Vector(1.5, 1.5, 1.5),
 }
@@ -105,8 +105,8 @@ SWEP.IronSightStruct = {
 }
 
 SWEP.HoldtypeHolstered = "passive"
-SWEP.HoldtypeActive = "ar2"
-SWEP.HoldtypeSights = "rpg"
+SWEP.HoldtypeActive = "pistol"
+SWEP.HoldtypeSights = "revolver"
 
 SWEP.ActivePos = Vector(0.75, 2, 0.75)
 SWEP.ActiveAng = Angle(0, 0, 0)
