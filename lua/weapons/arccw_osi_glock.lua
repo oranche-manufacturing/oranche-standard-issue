@@ -71,7 +71,7 @@ SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/glock/glock fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/glock/glock dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
@@ -127,7 +127,17 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+	{
+		PrintName= "Muzzle",
+		Slot= {"osi_suppressor","osi_device"},
+		Bone= "j_gun",
+		Offset= {
+			vpos = Vector(5, 0.1, 1.2),
+			vang = Angle(0, 0, 0),
+		},	
+	},
+}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {

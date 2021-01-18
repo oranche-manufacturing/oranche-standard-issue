@@ -212,7 +212,7 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
     },
-    ["exit_inspect"] = {
+    --[[["exit_inspect"] = {
         Source = "reg_inspect",
         Time = nil,
         SoundTable = {
@@ -237,7 +237,7 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
 					},
-    },
+    },]]
     ["enter_sprint"] = {
         Source = "reg_sprint_in",
         Time = nil,
