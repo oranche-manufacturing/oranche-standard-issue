@@ -45,7 +45,7 @@ SWEP.Recoil = 4 -- vertical recoil
 SWEP.RecoilSide = 2 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 600 -- 60 / RPM
-SWEP.Num = 8 -- shots per trigger pull
+SWEP.Num = 1 -- shots per trigger pull
 SWEP.ManualAction= true
 SWEP.Firemodes = {
     {
@@ -65,7 +65,7 @@ SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as we
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 150 -- dispersion penalty when in the air
 
-SWEP.Primary.Ammo = "buckshot"
+SWEP.Primary.Ammo = "SniperPenetratedRound"
 
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
