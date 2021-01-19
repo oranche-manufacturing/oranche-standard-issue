@@ -29,7 +29,7 @@ SWEP.DamageMin= 95
 SWEP.RangeMin= 150 -- metres
 SWEP.Range= 200 -- metres
 SWEP.Penetration= 35 -- millimetres
-SWEP.DamageType= DMG_BULLET + DMG_BUCKSHOT
+SWEP.DamageType= DMG_BULLET
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
