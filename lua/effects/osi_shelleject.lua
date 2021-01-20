@@ -106,7 +106,12 @@ function EFFECT:Init(data)
     phys:SetBuoyancyRatio(12)
     phys:SetMaterial("gmod_silent")
 
-    phys:SetVelocity((dir * mag * math.Rand(0.8, 1.6)) + plyvel)
+    local smin, smax = 0.8, 1.6
+
+    if wpn.ShellEjectSpeedMin then smin = wpn.ShellEjectSpeedMin end
+    if wpn.ShellEjectSpeedMax then smax = wpn.ShellEjectSpeedMax end
+
+    phys:SetVelocity((dir * mag * math.Rand(smin, smax)) + plyvel)
     phys:AddAngleVelocity(VectorRand() * 400)
 
     self.HitPitch = self.Pitch + math.Rand(-5,5)
