@@ -208,7 +208,9 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "putaway",
         Time = nil,
-                        {s = "weapons/arccw_osi/heavy bolt action/holster.wav",	t = 0},
+        SoundTable = {
+                        {s = "weapons/arccw_osi/heavy bolt action/holster.wav",	t = 0.1},
+        }
     },
     ["reload"] = {
         Source = "reload",
