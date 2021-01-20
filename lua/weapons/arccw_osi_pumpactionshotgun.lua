@@ -49,10 +49,14 @@ SWEP.Num = 8 -- shots per trigger pull
 SWEP.ManualAction= true
 SWEP.Firemodes = {
     {
+        PrintName = "SEMI-AUTO",
         Mode = 1,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 

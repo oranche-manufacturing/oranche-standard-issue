@@ -45,14 +45,18 @@ SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
 SWEP.Recoil = 1.0 -- vertical recoil
 SWEP.RecoilSide = 0.275 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 800 -- 60 / RPM
+SWEP.Delay = 60 / 500 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
+        PrintName = "SEMI-AUTO",
         Mode = 1,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 
@@ -127,55 +131,68 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
+SWEP.Hook_SelectReloadAnimation = function(wep, curanim)
+    local mag = wep.Attachments[3].Installed
+    local ext = ""
+    if mag == "osi_17p_mag_33" then
+        ext = "_ext1"
+    elseif mag == "osi_17p_mag_50" then
+        ext = "_ext2"
+    end
+
+    return curanim .. ext
+end
+
 SWEP.Attachments = {
     {
         PrintName= "Slide",
-        Slot={"osi_17P_slide"},
+        Slot = {"osi_17p_slide"},
+        DefaultAttName = "17P Slide",
     },
 	{
-		PrintName= "Muzzle",
-		Slot= {"osi_suppressor","osi_device"},
-		Bone= "j_gun",
+		PrintName = "Muzzle",
+		Slot = {"osi_suppressor","osi_device"},
+		Bone = "j_gun",
 		Offset= {
 			vpos = Vector(5, 0.1, 1.2),
 			vang = Angle(0, 0, 0),
 		},	
     },
     {
-		PrintName= "Magazine",
-		Slot= {"osi_17P_mag",},	
+		PrintName = "Magazine",
+		Slot = {"osi_17p_mag"},	
 	},
 }
 SWEP.AttachmentElements = {
     ["blackslide"] = {
-        VMBodygroups = {{ind= 3 , bg = 2}},
-        WMBodygroups = {{ind= 3 , bg = 2}},
+        VMBodygroups = {
+            {ind = 3, bg = 2},
+            {ind = 4, bg = 2},
+        },
     },
     ["longslide"] = {
-        VMBodygroups = {{ind= 3 , bg = 1}},
-        WMBodygroups = {{ind= 3 , bg = 1}},
-    },    
-    ["goldslide"] = {
-        VMBodygroups = {{ind= 3 , bg = 3}},
-        WMBodygroups = {{ind= 3 , bg = 3}},
-    },
-    ["longbarrel"] = {
-        VMBodygroups = {{ind= 4 , bg = 1}},
-        WMBodygroups = {{ind= 4 , bg = 1}},
+        VMBodygroups = {
+            {ind= 3 , bg = 1},
+            {ind= 4 , bg = 1},
+        },
         AttPosMods = {
             [2] = {
                 vpos = Vector(7, 0.1, 1.2),
 			    vang = Angle(0, 0, 0),
             }
         }
+    },    
+    ["goldslide"] = {
+        VMBodygroups = {
+            {ind= 3, bg = 3},
+            {ind= 4, bg = 3},
+        },
     },
     ["33rmag"] = {
         VMBodygroups = {{ind= 1 , bg = 1}},
-        WMBodygroups = {{ind= 1 , bg = 1}},
     }, 
     ["drummag"] = {
         VMBodygroups = {{ind= 1 , bg = 2}},
-        WMBodygroups = {{ind= 1 , bg = 2}},
     },
 }
 SWEP.Animations = {
@@ -231,6 +248,60 @@ SWEP.Animations = {
     },
 	["reload_empty"] = {
         Source = "reload_empty",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        Time = 1.96*1.09375,
+        MinProgress = 0.8,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/glock/chamber.wav", 	t = 1.4},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.6},
+					},
+    },
+    ["reload_ext1"] = {
+        Source = "reload_ext1",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        Time = 1.6*1.09375,
+        MinProgress = 0.8,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+					},
+    },
+	["reload_empty_ext1"] = {
+        Source = "reload_empty_ext1",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        Time = 1.96*1.09375,
+        MinProgress = 0.8,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/glock/chamber.wav", 	t = 1.4},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.6},
+					},
+    },
+    ["reload_ext2"] = {
+        Source = "reload_ext2",
+		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
+        Time = 1.6*1.09375,
+        MinProgress = 0.8,
+        SoundTable = {
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+					},
+    },
+	["reload_empty_ext2"] = {
+        Source = "reload_empty_ext2",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         Time = 1.96*1.09375,
         MinProgress = 0.8,

@@ -6,17 +6,13 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "osi_17P_slide"
+att.Slot = "osi_17p_slide"
 
 att.SortOrder = 12
 
-
 att.Mult_Recoil = 0.8
+att.Mult_RPM = 0.75
+att.Mult_Range = 1.25
+att.Mult_AccuracyMOA = 0.75
 
-att.Mult_RPM = 0.35
-
-att.Mult_Range = 1.4
-
-att.Mult_AccuracyMOA = 0.7
-
-att.ActivateElements = {"longslide","longbarrel"}
+att.ActivateElements = {"longslide"}
