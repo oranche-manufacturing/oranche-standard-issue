@@ -7,23 +7,24 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "osi_17P_slide"
+att.Slot = "osi_17p_slide"
 
 att.SortOrder = 12
 
 att.Override_Firemodes = {
     {
-        Mode = 2
+        PrintName = "AUTOMATIC",
+        Mode = 2,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 
-att.Mult_Recoil=1.5
-
-att.Mult_AccuracyMOA=1.2
-
-att.Mult_RPM=1.5
+att.Mult_Recoil = 1
+att.Mult_RPM = 2
 
 att.ActivateElements = {"goldslide"}

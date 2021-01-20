@@ -47,10 +47,14 @@ SWEP.Delay = 60 / 900 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
+        PrintName = "AUTOMATIC",
         Mode = 2,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 

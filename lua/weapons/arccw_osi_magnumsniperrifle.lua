@@ -49,17 +49,21 @@ SWEP.ReducedClipSize = 3
 
 SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
 SWEP.Recoil = 4 -- vertical recoil
-SWEP.RecoilSide = 2 -- horizontal recoil (this is harder/more random to control!)
+SWEP.RecoilSide = 0 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 120 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.ManualAction= true
 SWEP.Firemodes = {
     {
+        PrintName = "BOLT-ACTION",
         Mode = 1,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 
@@ -82,7 +86,7 @@ SWEP.ShootSoundSilenced = "weapons/arccw_osi/heavy bolt action/fire_supp.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/heavy bolt action/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
-SWEP.MuzzleEffect = "osi_muzzleeffect_shotgun"
+SWEP.MuzzleEffect = "osi_muzzleeffect_sniper"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/rifle shell.mdl"
 SWEP.ShellSounds = ArcCW.OSI.Shells_HighCal
@@ -95,7 +99,6 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerFinalMag = 0 -- the last X bullets in a magazine are all tracers
 SWEP.Tracer = "osi_tracer" -- override tracer (hitscan) effect
-SWEP.TracerCol = Color(255, 255, 255)
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
@@ -115,7 +118,6 @@ SWEP.IronSightStruct = {
     Magnification = 1.4,
     SwitchToSound = "",
     SwitchFromSound = "",
-    CrosshairInSights = false,
 }
 
 SWEP.HoldtypeHolstered = "passive"
@@ -139,7 +141,6 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
-
 SWEP.Attachments = {
     {
         PrintName= "Muzzle",
@@ -161,17 +162,11 @@ SWEP.Animations = {
         Source = "fire",
         Time = 0.4,
         MinProgress = 0.4, -- time until pump
-        SoundTable = {
-                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.3},
-                    },
     },
     ["fire_iron"] = {
         Source = "fire_ads",
         Time = 0.4,
         MinProgress = 0.4, -- time until pump
-        SoundTable = {
-                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.3},
-                    },
     },
     ["cycle"] = {
         Source = "cycle",
@@ -181,24 +176,24 @@ SWEP.Animations = {
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.1},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.16},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.45},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.2},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.4},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.6},
-                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.8},
+                        {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.6},
                     },
     },
     ["cycle_iron"] = {
         Source = "cycle_ads",
         Time = 1.2,
         MinProgress = 0.7,
-        ShellEjectAt = 0.35,
+        ShellEjectAt = 0.33,
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.1},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.16},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.45},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.2},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.4},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.6},
-                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.8},
+                        {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.6},
                     },
     },
     ["draw"] = {
@@ -217,33 +212,32 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = nil,
         MinProgress = 2.1,
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-                        {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	t = 0.75},
-                        {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-                        {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	t = 1.85},
+                        {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 0.75},
+                        {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 1.85},
                         {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.4},
                     },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         Time = nil,
         MinProgress = 2.6,
         SoundTable = {
+                        {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.15},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.23},
-                        {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.1},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.3},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
-                        {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	t = 1.25},
-                        {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-                        {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	t = 2.35},
+                        {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 1.25},
+                        {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 2.35},
+                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 3.2},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 3.35},
-                        {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.8},
+                        {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 3.5},
                     },
     },
     ["enter_sprint"] = {
@@ -259,5 +253,5 @@ SWEP.Animations = {
         Time = nil,
     },
 }
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 

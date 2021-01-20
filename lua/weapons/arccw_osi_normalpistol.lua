@@ -43,14 +43,18 @@ SWEP.VisualRecoilMult = 1.25 -- throw the viewmodel how far back
 SWEP.Recoil = 0.9 -- vertical recoil
 SWEP.RecoilSide = 0.4 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 600 -- 60 / RPM
+SWEP.Delay = 60 / 400 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
+        PrintName = "SEMI-AUTO",
         Mode = 1,
+        CustomBars = "-",
     },
     {
-        Mode = 0
+        PrintName = "SAFETY",
+        Mode = 0,
+        CustomBars = "_",
     }
 }
 
