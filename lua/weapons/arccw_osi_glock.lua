@@ -128,6 +128,10 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 7
 
 SWEP.Attachments = {
+    {
+        PrintName= "Slide",
+        Slot={"osi_17P_slide"},
+    },
 	{
 		PrintName= "Muzzle",
 		Slot= {"osi_suppressor","osi_device"},
@@ -136,9 +140,44 @@ SWEP.Attachments = {
 			vpos = Vector(5, 0.1, 1.2),
 			vang = Angle(0, 0, 0),
 		},	
+    },
+    {
+		PrintName= "Magazine",
+		Slot= {"osi_17P_mag",},	
 	},
 }
-SWEP.AttachmentElements = {}
+SWEP.AttachmentElements = {
+    ["blackslide"] = {
+        VMBodygroups = {{ind= 3 , bg = 2}},
+        WMBodygroups = {{ind= 3 , bg = 2}},
+    },
+    ["longslide"] = {
+        VMBodygroups = {{ind= 3 , bg = 1}},
+        WMBodygroups = {{ind= 3 , bg = 1}},
+    },    
+    ["goldslide"] = {
+        VMBodygroups = {{ind= 3 , bg = 3}},
+        WMBodygroups = {{ind= 3 , bg = 3}},
+    },
+    ["longbarrel"] = {
+        VMBodygroups = {{ind= 4 , bg = 1}},
+        WMBodygroups = {{ind= 4 , bg = 1}},
+        AttPosMods = {
+            [2] = {
+                vpos = Vector(7, 0.1, 1.2),
+			    vang = Angle(0, 0, 0),
+            }
+        }
+    },
+    ["33rmag"] = {
+        VMBodygroups = {{ind= 1 , bg = 1}},
+        WMBodygroups = {{ind= 1 , bg = 1}},
+    }, 
+    ["drummag"] = {
+        VMBodygroups = {{ind= 1 , bg = 2}},
+        WMBodygroups = {{ind= 1 , bg = 2}},
+    },
+}
 SWEP.Animations = {
 	["idle"] = {
         Source = "idle",

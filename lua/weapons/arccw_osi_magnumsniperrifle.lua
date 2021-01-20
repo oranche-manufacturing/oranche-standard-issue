@@ -25,8 +25,8 @@ SWEP.WorldModelOffset = {
 
 SWEP.Damage= 150
 SWEP.DamageMin= 95
-SWEP.RangeMin= 150 -- metres
-SWEP.Range= 200 -- metres
+SWEP.RangeMin= 300 -- metres
+SWEP.Range= 400 -- metres
 SWEP.Penetration= 35 -- millimetres
 SWEP.DamageType= DMG_BULLET -- despite .338 being a caliber that is capable of smashing targets, i want to reserve the role of anti-vehicle to anti-material weapons and magnetic weapons
 SWEP.ShootEntity= nil
@@ -36,14 +36,14 @@ SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 1 -- remember to not be an idiot (again, oranche?????)
 SWEP.Primary.ClipSize = 5
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 7
+SWEP.ExtendedClipSize = 8
 SWEP.ReducedClipSize = 3
 
 SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
 SWEP.Recoil = 4 -- vertical recoil
 SWEP.RecoilSide = 2 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 60 -- 60 / RPM
+SWEP.Delay = 40 / 60 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.ManualAction= true
 SWEP.Firemodes = {
@@ -59,7 +59,7 @@ SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100 -- 100 in the center
 
 SWEP.AccuracyMOA = 0.05 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 800 -- inaccuracy added by hip firing.
+SWEP.HipDispersion = 600 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
 SWEP.JumpDispersion = 150 -- dispersion penalty when in the air
@@ -122,9 +122,22 @@ SWEP.CustomizeAng = Angle(15, 30, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
+
+
 SWEP.ExtraSightDist = 7
 
-SWEP.Attachments = {}
+
+SWEP.Attachments = {
+	{
+		PrintName= "Muzzle",
+		Slot= {"osi_suppressor","osi_device"},
+		Bone= "j_gun",
+		Offset= {
+			vpos = Vector(29.6, 0, 1.75),
+			vang = Angle(0, 0, 0),
+		},	
+	},
+}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
