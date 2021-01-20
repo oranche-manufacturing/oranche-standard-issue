@@ -81,12 +81,14 @@ SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/fire_dist.wav"
 
 SWEP.Hook_GetShootSound = function(wep, sound)
     local thatsound
-    if (wep:GetBurstCount() % 3 == 1) then
+    if (wep:GetBurstCount() == 1) then
         thatsound = "weapons/arccw_osi/compact smg/fire_first.wav"
+    elseif (wep:GetBurstCount() % 3 == 1) then
+        thatsound = "weapons/arccw_osi/compact smg/fire_01.wav"
     elseif (wep:GetBurstCount() % 3 == 2) then
-        thatsound = "weapons/arccw_osi/compact smg/fire.wav"
+        thatsound = "weapons/arccw_osi/compact smg/fire_02.wav"
     else
-        thatsound = "weapons/arccw_osi/compact smg/fire.wav"
+        thatsound = "weapons/arccw_osi/compact smg/fire_03.wav"
     end
 	
     return thatsound
