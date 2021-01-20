@@ -1,6 +1,6 @@
 att.PrintName = "18APC Slide"
 att.Icon = Material("entities/attachments/osi_17p_goldslide.png")
-att.Description = "The golden, vented slide. Makes you look like a mob boss and offers superior cooling for faster firing! Note: full auto only."
+att.Description = "The golden, ported slide. Makes you look like a mob boss and offers superior cooling for faster firing! Note: full auto only."
 att.Desc_Pros = {
     "Full Auto"
 }
