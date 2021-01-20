@@ -76,9 +76,15 @@ EFFECT.Material = Material("particle/water/waterdrop_001a_refract")
 EFFECT.Color = Color(255, 255, 255)
 EFFECT.Width = 4
 EFFECT.DieTime = 4
+EFFECT.SpawnTime = 0
+
+local BulletsMinDistance = 200
 
 function EFFECT:Init(data)
     local wpn = data:GetEntity()
+    local ply = wpn:GetOwner()
+    local pwpn = ply:GetActiveWeapon()
+    self.SpawnTime = CurTime()
 
     self.Bullet = bulletbase
 
@@ -100,9 +106,9 @@ function EFFECT:Init(data)
     if !mpos then self:Remove() return end
 
     self.TrueLength = (mpos - self.EndPos):Length()
-    self.StartPos = wpn:GetMuzzlePos() + ((self.EndPos - wpn:GetMuzzlePos()):GetNormalized() * ACT3.BulletsMinDistance)
+    self.StartPos = wpn:GetMuzzlePos() + ((self.EndPos - wpn:GetMuzzlePos()):GetNormalized() * BulletsMinDistance)
 
-    if self.TrueLength <= ACT3.BulletsMinDistance then
+    if self.TrueLength <= BulletsMinDistance then
         self.DieTime = 0
     end
 
@@ -117,9 +123,15 @@ function EFFECT:Think()
 end
 
 function EFFECT:Render()
-    local bullet = self.Bullet
+    local bullet = bulletbase
+
 
     local delta = (CurTime() - self.SpawnTime) / (self.DieTime - self.SpawnTime)
+    
+    print(delta)
+    print(self.StartPos)
+    print(self.EndPos)
+
     local startbeampos = Lerp(delta, self.StartPos, self.EndPos)
     local endbeampos = Lerp(delta + (bullet.TracerLength / self.Length), self.StartPos, self.EndPos)
 
