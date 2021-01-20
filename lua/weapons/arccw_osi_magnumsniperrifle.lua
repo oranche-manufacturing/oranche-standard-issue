@@ -28,7 +28,7 @@ SWEP.DamageMin= 95
 SWEP.RangeMin= 150 -- metres
 SWEP.Range= 200 -- metres
 SWEP.Penetration= 35 -- millimetres
-SWEP.DamageType= DMG_BULLET + DMG_BLAST -- hopefully thisll do more vehicle damage...?
+SWEP.DamageType= DMG_BULLET -- despite .338 being a caliber that is capable of smashing targets, i want to reserve the role of anti-vehicle to anti-material weapons and magnetic weapons
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
