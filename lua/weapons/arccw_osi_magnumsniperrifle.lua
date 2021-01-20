@@ -199,10 +199,16 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "pullout",
         Time = nil,
+        SoundTable = {
+                        {s = "weapons/arccw_osi/heavy bolt action/draw.wav",	t = 0},
+                        {s = "weapons/arccw_osi/cloth3.wav",	t = 0.2},
+                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav",	t = 0.75},
+        },
     },
     ["holster"] = {
         Source = "putaway",
         Time = nil,
+                        {s = "weapons/arccw_osi/heavy bolt action/holster.wav",	t = 0},
     },
     ["reload"] = {
         Source = "reload",
