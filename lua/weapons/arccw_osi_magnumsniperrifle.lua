@@ -12,10 +12,9 @@ SWEP.Trivia_Country= "United Kingdom"
 SWEP.Trivia_Calibre= ".338 Lapua Magnum"
 SWEP.Slot= 2
 
-SWEP.ViewModel= "models/weapons/arccw_osi/pump action shotgun.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/awm.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/pump action shotgun worldmodel.mdl"
-SWEP.MirrorWorldModel = "models/weapons/arccw_osi/pump action shotgun worldmodel.mdl"
+SWEP.WorldModel= "models/weapons/arccw_osi/awm.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -77,9 +76,9 @@ SWEP.DistantShootSound = "weapons/arccw_osi/heavy bolt action/fire_dist.wav"
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_shotgun"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
-SWEP.ShellModel = "models/weapons/arccw_osi/effects/buckshot shell.mdl"
-SWEP.ShellSounds = ArcCW.OSI.Shells_Buckshot
-SWEP.ShellScale = 1
+SWEP.ShellModel = "models/weapons/arccw_osi/effects/rifle shell.mdl"
+SWEP.ShellSounds = ArcCW.OSI.Shells_HighCal
+SWEP.ShellScale = 1.25
 SWEP.ShellPhysScale = 1.5
 SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 
@@ -96,24 +95,25 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-3.59, -2, 0.75),
-    Ang = Angle(0.3, 0, 0),
-    Magnification = 1.2,
+    Pos = Vector(-5.25, 0, 1.75),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.4,
     SwitchToSound = "",
     SwitchFromSound = "",
+    CrosshairInSights = true,
 }
 
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
 
-SWEP.ActivePos = Vector(0, -2, 0)
+SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(-0, -2, 0)
+SWEP.HolsterPos = Vector(-0, 2, 0)
 SWEP.HolsterAng = Angle(-5, 10, 0)
 
-SWEP.SprintPos = Vector(0, -2, 0)
+SWEP.SprintPos = Vector(0, 2, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(5, -2, -2)
@@ -136,34 +136,36 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = 0.3,
-        MinProgress = 0.3, -- time until pump
+        Time = 0.4,
+        MinProgress = 0.4, -- time until pump
     },
 	["fire_iron"] = {
         Source = "fire_ads",
-        Time = 0.3,
-        MinProgress = 0.3, -- time until pump
+        Time = 0.4,
+        MinProgress = 0.4, -- time until pump
     },
     ["cycle"] = {
         Source = "cycle",
-        Time = 0.4,
+        Time = .8,
+        MinProgress = 0.6,
         ShellEjectAt = 0,
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.12},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.2},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.34},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.6},
 					},
     },
     ["cycle_iron"] = {
         Source = "cycle_ads",
-        Time = 0.4,
+        Time = .8,
+        MinProgress = 0.6,
         ShellEjectAt = 0,
         SoundTable = {
 						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.12},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.2},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.34},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.6},
 					},
     },
     ["draw"] = {
@@ -185,22 +187,30 @@ SWEP.Animations = {
         Time = nil,
     },
     ["reload"] = {
-        Source = "reload_1",
+        Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.12},
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 0.6},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 2},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.4},
 					},
     },
     ["reload_empty"] = {
-        Source = "reload_2",
+        Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.12},
-						{s = shellinsertsound, 	                    t = 0.24},
+						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.1},
+						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
+						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 2.4},
+						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 3.2},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.8},
 					},
     },
     ["enter_sprint"] = {
