@@ -195,7 +195,7 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
 						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.97},
-						{s = "weapons/arccw_osi/heavy pistol/release.wav", 	t = 1.5},
+						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.5},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
 					},
     },
