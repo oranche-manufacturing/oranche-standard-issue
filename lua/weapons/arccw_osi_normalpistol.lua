@@ -68,8 +68,8 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/normal pistol/pistolfire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
+SWEP.ShootSound = "weapons/arccw_osi/normal pistol/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/fire_supp.wav"
 SWEP.DistantShootSound = nil
 
 SWEP.Override_ShellEffect = "osi_shelleject"
@@ -192,9 +192,9 @@ SWEP.Animations = {
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 0.95},
+						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 0.95},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
 					},
     },
@@ -205,10 +205,10 @@ SWEP.Animations = {
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagin.wav", 	t = 0.95},
-						{s = "weapons/arccw_osi/normal pistol/pistolsrelease.wav", 	t = 1.55},
+						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 0.95},
+						{s = "weapons/arccw_osi/normal pistol/chamber.wav", 	t = 1.55},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
     },

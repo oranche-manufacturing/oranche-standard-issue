@@ -70,9 +70,9 @@ SWEP.Primary.Ammo = "ar2"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/heavyarfire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/heavyardist.wav"
+SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/heavy assault rifle/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_rifle"
@@ -124,7 +124,17 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+	{
+		PrintName= "Muzzle",
+		Slot= {"osi_suppressor","osi_device"},
+		Bone= "j_gun",
+		Offset= {
+			vpos = Vector(19, 0, 0.45),
+			vang = Angle(0, 0, 0),
+		},	
+	},
+}
 SWEP.AttachmentElements = {}
 SWEP.Animations = {
 	["idle"] = {
@@ -173,10 +183,10 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.9},
+						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.45},
+						{s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.45},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.5},
 					},
     },
@@ -188,12 +198,12 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagout.wav", 	t = 0.9},
+						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarmagin.wav", 	t = 1.55},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchback.wav", 	t = 2.57},
-						{s = "weapons/arccw_osi/heavy assault rifle/heavyarchamber.wav", 	t = 2.9},
+						{s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.55},
+						{s = "weapons/arccw_osi/heavy assault rifle/chback.wav", 	t = 2.57},
+						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 2.9},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.1},
 					},
     },

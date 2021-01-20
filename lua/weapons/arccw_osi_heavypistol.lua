@@ -68,9 +68,9 @@ SWEP.Primary.Ammo = "357"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/magnumfire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/heavy pistol/magnumdist.wav"
+SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/heavy pistol/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_pistol_heavy"
@@ -179,9 +179,9 @@ SWEP.Animations = {
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 1.0},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 1.0},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.4},
 					},
     },
@@ -192,10 +192,10 @@ SWEP.Animations = {
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magnummagin.wav", 	    t = 0.97},
-						{s = "weapons/arccw_osi/heavy pistol/magnumrelease.wav", 	t = 1.5},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.97},
+						{s = "weapons/arccw_osi/heavy pistol/release.wav", 	t = 1.5},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
 					},
     },

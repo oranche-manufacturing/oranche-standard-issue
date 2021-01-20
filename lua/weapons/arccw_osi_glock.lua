@@ -70,9 +70,9 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/glock/glock fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/pistolsup.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/glock/glock dist.wav"
+SWEP.ShootSound = "weapons/arccw_osi/glock/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/glock/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
@@ -184,9 +184,9 @@ SWEP.Animations = {
         MinProgress = 0.8,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
 					},
     },
@@ -197,10 +197,10 @@ SWEP.Animations = {
         MinProgress = 0.8,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/glock/glock_magout.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/glock/glock_magin.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/glock/glock_chamber.wav", 	t = 1.4},
+						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
+						{s = "weapons/arccw_osi/glock/chamber.wav", 	t = 1.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.6},
 					},
     },

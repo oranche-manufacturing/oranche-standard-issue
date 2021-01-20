@@ -70,9 +70,9 @@ SWEP.Primary.Ammo = "SniperPenetratedRound"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/pump action shotgun/pump fire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/heavy bolt action/fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/pump action shotgun/pump dist.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/heavy bolt action/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_shotgun"
@@ -124,21 +124,8 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
 
--- written by 8z
-SWEP.ShotgunReload = true
-SWEP.Hook_SelectInsertAnimation = function(wep, data)
-    local insertAmt = math.min(wep.Primary.ClipSize + wep:GetChamberSize() - wep:Clip1(), wep:GetOwner():GetAmmoCount(wep.Primary.Ammo), 5)
-    local anim = "reload_" .. insertAmt
-
-    return {count = insertAmt, anim = anim, empty = false}
-end
-
--- don't pump after a reload
-SWEP.Hook_PreReload = function(wep)
-    wep:SetNeedCycle(false)
-end
-
-local shellinsertsound = { "weapons/arccw_osi/pump action shotgun/shotshell_insert1.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert2.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert3.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert4.wav" }
+-- get rid of me after i stop being a pump action shotgun. any time
+local shellinsertsound = "weapons/arccw_osi/pump action shotgun/shotshell_insert1.wav"
 
 SWEP.Attachments = {}
 SWEP.AttachmentElements = {}
@@ -197,27 +184,7 @@ SWEP.Animations = {
         Source = "holster",
         Time = nil,
     },
-    ["sgreload_start"] = {
-        Source = "reload_start",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-					},
-    },
-    ["sgreload_finish"] = {
-        Source = "reload_end",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        Time = nil,
-        ShellEjectAt = 0,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.3},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.45},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.7},
-					},
-    },
-    ["reload_1"] = {
+    ["reload"] = {
         Source = "reload_1",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
@@ -226,50 +193,14 @@ SWEP.Animations = {
 						{s = shellinsertsound, 	                    t = 0.12},
 					},
     },
-    ["reload_2"] = {
+    ["reload_empty"] = {
         Source = "reload_2",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
 						{s = shellinsertsound, 	                    t = 0.12},
-						{s = shellinsertsound, 	                    t = 0.675},
-					},
-    },
-    ["reload_3"] = {
-        Source = "reload_3",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.12},
-						{s = shellinsertsound, 	                    t = 0.675},
-						{s = shellinsertsound, 	                    t = 1.2},
-					},
-    },
-    ["reload_4"] = {
-        Source = "reload_4",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.12},
-						{s = shellinsertsound, 	                    t = 0.675},
-						{s = shellinsertsound, 	                    t = 1.2},
-						{s = shellinsertsound, 	                    t = 1.675},
-					},
-    },
-    ["reload_5"] = {
-        Source = "reload_5",
-		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = shellinsertsound, 	                    t = 0.12},
-						{s = shellinsertsound, 	                    t = 0.675},
-						{s = shellinsertsound, 	                    t = 1.2},
-						{s = shellinsertsound, 	                    t = 1.675},
-						{s = shellinsertsound, 	                    t = 2.2},
+						{s = shellinsertsound, 	                    t = 0.24},
 					},
     },
     ["enter_sprint"] = {

@@ -68,9 +68,9 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/smg/smg_fire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/smg/fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/smg/smg_dist.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/smg/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
@@ -176,7 +176,7 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.1},
-						{s = "weapons/arccw_osi/normal pistol/pistolmagout.wav", 	t = 0.6},
+						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 0.6},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
 					},
     },
@@ -191,10 +191,10 @@ SWEP.Animations = {
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.35},
+						{s = "weapons/arccw_osi/smg/magout.wav", 	t = 0.35},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.87},
+						{s = "weapons/arccw_osi/smg/magin.wav", 	            t = 1.87},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.3},
 					},
     },
@@ -205,12 +205,12 @@ SWEP.Animations = {
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/smg/smg_magout.wav", 	t = 0.35},
+						{s = "weapons/arccw_osi/smg/magout.wav", 	t = 0.35},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/smg/smg_magin.wav", 	            t = 1.87},
-						{s = "weapons/arccw_osi/smg/smg_chback.wav", 	t = 2.4},
-						{s = "weapons/arccw_osi/smg/smg_chamber.wav", 	t = 2.8},
+						{s = "weapons/arccw_osi/smg/magin.wav", 	            t = 1.87},
+						{s = "weapons/arccw_osi/smg/chback.wav", 	t = 2.4},
+						{s = "weapons/arccw_osi/smg/chamber.wav", 	t = 2.8},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.2},
 					},
     },

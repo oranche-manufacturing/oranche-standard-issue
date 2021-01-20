@@ -70,9 +70,9 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/machine pistol/machine pistol fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/csmg2_sup.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/machine pistol/machine pistol dist.wav"
+SWEP.ShootSound = "weapons/arccw_osi/machine pistol/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/machine pistol/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_mac11"
@@ -178,8 +178,8 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.1},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	    t = 0.50},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 0.80},
+						{s = "weapons/arccw_osi/compact smg/chback.wav", 	    t = 0.50},
+						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	t = 0.80},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
 					},
     },
@@ -194,10 +194,10 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/machine pistol/machine pistol magout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/machine pistol/magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.15},
-						{s = "weapons/arccw_osi/machine pistol/machine pistol magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/machine pistol/magin.wav", 	            t = 1.4},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.6},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
@@ -209,11 +209,11 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/machine pistol/machine pistol magout.wav", 	t = 0.30},
+						{s = "weapons/arccw_osi/machine pistol/magout.wav", 	t = 0.30},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/machine pistol/machine pistol magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/machine pistol/machine pistol chamber.wav", 	t = 2.20},
+						{s = "weapons/arccw_osi/machine pistol/magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/machine pistol/chamber.wav", 	t = 2.20},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},

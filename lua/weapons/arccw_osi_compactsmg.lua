@@ -70,19 +70,19 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
-SWEP.ShootSound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/csmg2_sup.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/csmg2_dist.wav"
+SWEP.FirstShootSound = "weapons/arccw_osi/compact smg/fire_first.wav"
+SWEP.ShootSound = "weapons/arccw_osi/compact smg/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/compact smg/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/compact smg/fire_dist.wav"
 
 SWEP.Hook_GetShootSound = function(wep, sound)
     local thatsound
     if (wep:GetBurstCount() % 3 == 1) then
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_first.wav"
+        thatsound = "weapons/arccw_osi/compact smg/fire_first.wav"
     elseif (wep:GetBurstCount() % 3 == 2) then
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
+        thatsound = "weapons/arccw_osi/compact smg/fire.wav"
     else
-        thatsound = "weapons/arccw_osi/compact smg/csmg2_fire.wav"
+        thatsound = "weapons/arccw_osi/compact smg/fire.wav"
     end
 	
     return thatsound
@@ -192,8 +192,8 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.1},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	    t = 0.50},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 0.80},
+						{s = "weapons/arccw_osi/compact smg/chback.wav", 	    t = 0.50},
+						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	t = 0.80},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
 					},
     },
@@ -208,10 +208,10 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magout.wav", 	t = 0.3},
+						{s = "weapons/arccw_osi/compact smg/magout.wav", 	t = 0.3},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.15},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/compact smg/magin.wav", 	            t = 1.4},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.6},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
 					},
@@ -223,12 +223,12 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magout.wav", 	t = 0.30},
+						{s = "weapons/arccw_osi/compact smg/magout.wav", 	t = 0.30},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/compact smg/csmg2_magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chback.wav", 	t = 1.95},
-						{s = "weapons/arccw_osi/compact smg/csmg2_chamber.wav", 	t = 2.20},
+						{s = "weapons/arccw_osi/compact smg/magin.wav", 	            t = 1.4},
+						{s = "weapons/arccw_osi/compact smg/chback.wav", 	t = 1.95},
+						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	t = 2.20},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},
