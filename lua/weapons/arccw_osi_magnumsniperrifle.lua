@@ -207,8 +207,8 @@ SWEP.Animations = {
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
         SoundTable = {
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.25},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.15},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.23},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.1},
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
 						{s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	t = 1.25},
