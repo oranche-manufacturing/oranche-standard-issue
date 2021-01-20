@@ -28,22 +28,22 @@ SWEP.DamageMin= 95
 SWEP.RangeMin= 150 -- metres
 SWEP.Range= 200 -- metres
 SWEP.Penetration= 35 -- millimetres
-SWEP.DamageType= DMG_BULLET
+SWEP.DamageType= DMG_BULLET + DMG_BLAST -- hopefully thisll do more vehicle damage...?
 SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 0 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 4
+SWEP.Primary.ClipSize = 5
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 6
-SWEP.ReducedClipSize = 2
+SWEP.ExtendedClipSize = 7
+SWEP.ReducedClipSize = 3
 
 SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
 SWEP.Recoil = 4 -- vertical recoil
 SWEP.RecoilSide = 2 -- horizontal recoil (this is harder/more random to control!)
 
-SWEP.Delay = 60 / 600 -- 60 / RPM
+SWEP.Delay = 60 / 60 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.ManualAction= true
 SWEP.Firemodes = {
@@ -166,21 +166,11 @@ SWEP.Animations = {
 					},
     },
     ["draw"] = {
-        Source = "draw",
+        Source = "pullout",
         Time = nil,
-    },
-    ["ready"] = {
-        Source = "draw_first",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	    t = 0.5},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.65},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.9},
-					},
     },
     ["holster"] = {
-        Source = "holster",
+        Source = "putaway",
         Time = nil,
     },
     ["reload"] = {
