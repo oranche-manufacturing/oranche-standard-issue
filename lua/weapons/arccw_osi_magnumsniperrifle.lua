@@ -34,10 +34,10 @@ SWEP.ShootEntity= nil
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
 SWEP.ChamberSize = 0 -- remember to not be an idiot
-SWEP.Primary.ClipSize = 8
+SWEP.Primary.ClipSize = 4
 -- cs+ style clip extenders
-SWEP.ExtendedClipSize = 12
-SWEP.ReducedClipSize = 4
+SWEP.ExtendedClipSize = 6
+SWEP.ReducedClipSize = 2
 
 SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
 SWEP.Recoil = 4 -- vertical recoil
@@ -100,7 +100,7 @@ SWEP.IronSightStruct = {
     Magnification = 1.4,
     SwitchToSound = "",
     SwitchFromSound = "",
-    CrosshairInSights = true,
+    CrosshairInSights = false,
 }
 
 SWEP.HoldtypeHolstered = "passive"
@@ -123,9 +123,6 @@ SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 7
-
--- get rid of me after i stop being a pump action shotgun. any time
-local shellinsertsound = "weapons/arccw_osi/pump action shotgun/shotshell_insert1.wav"
 
 SWEP.Attachments = {}
 SWEP.AttachmentElements = {}
