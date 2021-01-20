@@ -158,7 +158,7 @@ SWEP.Animations = {
         Source = "cycle",
         Time = .8,
         MinProgress = 0.6,
-        ShellEjectAt = 0.2,
+        ShellEjectAt = 0.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
                         {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
@@ -172,7 +172,7 @@ SWEP.Animations = {
         Source = "cycle_ads",
         Time = .8,
         MinProgress = 0.6,
-        ShellEjectAt = 0.2,
+        ShellEjectAt = 0.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
                         {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
