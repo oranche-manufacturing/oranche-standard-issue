@@ -72,7 +72,7 @@ local bulletbase = {
 
 -- act3
 
-EFFECT.Material = Material("particle/water/waterdrop_001a2_refract")
+EFFECT.Material = Material("particle/water/waterdrop_001a_refract")
 EFFECT.Color = Color(255, 255, 255)
 EFFECT.Width = 4
 EFFECT.DieTime = 4

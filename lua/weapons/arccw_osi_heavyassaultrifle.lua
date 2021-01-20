@@ -90,6 +90,10 @@ SWEP.ShellRotateAngle = Angle(0, 90, 0) -- call of doo doo
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
+SWEP.TracerNum = 1 -- tracer every X
+SWEP.TracerFinalMag = 0 -- the last X bullets in a magazine are all tracers
+SWEP.Tracer = "osi_tracer" -- override tracer (hitscan) effect
+
 SWEP.SightTime = 0.30
 SWEP.SpeedMult = 0.90
 SWEP.SightedSpeedMult = 0.5
