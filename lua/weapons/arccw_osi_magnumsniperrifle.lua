@@ -33,7 +33,7 @@ SWEP.ShootEntity= nil
 
 SWEP.MuzzleVelocity= 300
 SWEP.CanFireUnderwater = false -- gloop gloop
-SWEP.ChamberSize = 0 -- remember to not be an idiot
+SWEP.ChamberSize = 1 -- remember to not be an idiot (again, oranche?????)
 SWEP.Primary.ClipSize = 5
 -- cs+ style clip extenders
 SWEP.ExtendedClipSize = 7
@@ -145,11 +145,13 @@ SWEP.Animations = {
         Source = "cycle",
         Time = .8,
         MinProgress = 0.6,
-        ShellEjectAt = 0,
+        ShellEjectAt = 0.2,
         SoundTable = {
-						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.34},
+						{s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
+                        {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.03},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 0.30},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.31},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.6},
 					},
     },
@@ -157,11 +159,13 @@ SWEP.Animations = {
         Source = "cycle_ads",
         Time = .8,
         MinProgress = 0.6,
-        ShellEjectAt = 0,
+        ShellEjectAt = 0.2,
         SoundTable = {
-						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 0.34},
+						{s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
+                        {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.03},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 0.30},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.31},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 0.6},
 					},
     },
@@ -179,9 +183,9 @@ SWEP.Animations = {
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 0.6},
+						{s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	t = 0.75},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 2},
+						{s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	t = 1.85},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.4},
 					},
     },
@@ -190,13 +194,15 @@ SWEP.Animations = {
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
         Time = nil,
         SoundTable = {
-						{s = "weapons/arccw_osi/pump action shotgun/back.wav", 	t = 0},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.25},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.1},
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
-						{s = "weapons/arccw_osi/normal pistol/magout.wav", 	t = 1},
+						{s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	t = 1.25},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-						{s = "weapons/arccw_osi/normal pistol/magin.wav", 	t = 2.4},
-						{s = "weapons/arccw_osi/pump action shotgun/forward.wav", 	t = 3.2},
+                        {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	t = 2.35},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 3.1},
+						{s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 3.3},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.8},
 					},
     },
