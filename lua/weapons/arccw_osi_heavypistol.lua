@@ -129,7 +129,7 @@ SWEP.ExtraSightDist = 7
 
 SWEP.Attachments = {
     {
-        PrintName= "Optic",
+        PrintName= "Optic", -- Reminder to rail me!
         Slot= {"osi_optic_lp"},
         Bone= "j_bolt",
         Offset= {

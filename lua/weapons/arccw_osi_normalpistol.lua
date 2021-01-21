@@ -131,6 +131,15 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 7
 
 SWEP.Attachments = {
+    {
+        PrintName= "Optic", -- Reminder to rail me!
+        Slot= {"osi_optic_lp"},
+        Bone= "j_bolt",
+        Offset= {
+            vpos = Vector(1, 0, 0.4),
+            vang = Angle(0, 0, 0),
+        },  
+    },
 	{
 		PrintName= "Muzzle",
 		Slot= {"osi_suppressor","osi_device"},

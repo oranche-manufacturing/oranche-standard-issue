@@ -149,18 +149,27 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName= "Slide",
-        Slot = {"osi_17p_slide"},
-        DefaultAttName = "17P Slide",
+        PrintName= "Optic", -- Reminder to rail me!
+        Slot= {"osi_optic_lp"},
+        Bone= "j_bolt",
+        Offset= {
+            vpos = Vector(0.1, 0.17, 0.6),
+            vang = Angle(0, 0, 0),
+        },  
     },
-	{
+    {
 		PrintName = "Muzzle",
 		Slot = {"osi_suppressor","osi_device"},
 		Bone = "j_gun",
 		Offset= {
-			vpos = Vector(5, 0.1, 1.2),
+			vpos = Vector(5, 0.16, 1.2),
 			vang = Angle(0, 0, 0),
 		},	
+    },
+    {
+        PrintName= "Slide",
+        Slot = {"osi_17p_slide"},
+        DefaultAttName = "17P Slide",
     },
     {
 		PrintName = "Magazine",

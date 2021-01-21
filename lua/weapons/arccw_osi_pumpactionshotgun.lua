@@ -148,8 +148,44 @@ end
 
 local shellinsertsound = { "weapons/arccw_osi/pump action shotgun/shotshell_insert1.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert2.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert3.wav", "weapons/arccw_osi/pump action shotgun/shotshell_insert4.wav" }
 
-SWEP.Attachments = {}
-SWEP.AttachmentElements = {}
+SWEP.Attachments = {
+    {
+        PrintName= "Optic",
+        Slot= {"osi_optic_hp","osi_optic_lp"},
+        Bone= "j_gun",
+        Offset= {
+            vpos = Vector(4, -0.14, 2.36),
+            vang = Angle(0, 0, 0),
+        },  
+        InstalledEles = {"rail"},
+    },
+    {
+        PrintName= "Muzzle",
+        Slot= {"osi_suppressor","osi_device"},
+        Bone= "j_gun",
+        Offset= {
+            vpos = Vector(22.3, -0.14, 1.3),
+            vang = Angle(0, 0, 0),
+        },	
+    },
+}
+SWEP.AttachmentElements = {
+    ["rail"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw_osi/attachments/compatibility rail.mdl",
+                Bone = "j_gun",
+                Scale = Vector(1.4, 1.3, 1),
+                Offset = {
+                    pos = Vector(4, -0.14, 1.9),
+                    ang = Angle(0, 0, 0)
+                },
+                ModelSkin = 0,
+            }
+        },
+    },
+
+}
 SWEP.Animations = {
 	["idle"] = {
         Source = "idle",
