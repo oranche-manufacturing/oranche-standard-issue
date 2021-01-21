@@ -1,5 +1,5 @@
 att.PrintName = "Sovetsky Suppressor"
-att.Icon = Material("entities/attachments/osi_pbs.png")
+att.Icon = Material("entities/osi_supressor.png")
 att.Description = "Patented Russian muffler design, made for when you don't want to wake up all of Moscow while doing KGB work."
 att.Desc_Pros = {
 }

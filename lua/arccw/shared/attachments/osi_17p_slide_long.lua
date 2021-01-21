@@ -1,5 +1,5 @@
 att.PrintName = "34P Slide"
-att.Icon = Material("entities/attachments/osi_17p_longslide.png")
+att.Icon = Material("entities/osi_17p_slide_long.png")
 att.Description = "Longer slide and barrel for longer range. Ever wanted to use your gorgeous 17P for hunting? Now you can!"
 att.Desc_Pros = {
 }

@@ -1,5 +1,5 @@
 att.PrintName = "18APC Slide"
-att.Icon = Material("entities/attachments/osi_17p_goldslide.png")
+att.Icon = Material("entities/osi_17p_slide_gold.png")
 att.Description = "It's scientific fact that putting holes in your gun makes it better. It also, apparently, makes it full auto only. -C&N R&D"
 att.Desc_Pros = {
     "Full Auto"
