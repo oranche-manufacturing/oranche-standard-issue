@@ -1,5 +1,5 @@
 att.PrintName = "LP C&N Dotty"
-att.Icon = Material("entities/acwatt_optic_docter.png")
+att.Icon = Material("entities/attachments/osi_lpdotty.png")
 att.Description = "Magically places a dot over where bullets go. All rights reserved."
 
 att.SortOrder = 0
