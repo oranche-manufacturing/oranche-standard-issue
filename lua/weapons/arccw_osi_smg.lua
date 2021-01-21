@@ -137,7 +137,7 @@ SWEP.Attachments = {
 		Slot= {"osi_suppressor","osi_device"},
 		Bone= "j_gun",
 		Offset= {
-			vpos = Vector(6.5, 0, 2.3),
+			vpos = Vector(9.2, 0, 0.1),
 			vang = Angle(0, 0, 0),
 		},	
 	},
