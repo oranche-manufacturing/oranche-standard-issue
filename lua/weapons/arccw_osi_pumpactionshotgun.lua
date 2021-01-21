@@ -3,10 +3,10 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "B500"
+SWEP.PrintName= "Racketeer"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Shotgun"
-SWEP.Trivia_Desc= "Can't get more classic than this! We defined the word 'pump-action' with this model, and have been going at it since... sometime."
+SWEP.Trivia_Desc= "We defined the word 'pump-action' with this model, and have been going at it since... sometime."
 SWEP.Trivia_Manufacturer= "Sportfield Arms U.S.A"
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= "12 Gauge"

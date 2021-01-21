@@ -3,7 +3,7 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "MAZ1"
+SWEP.PrintName= "Mazzi"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "SMG"
 SWEP.Trivia_Desc= "Pullin' up on them has never been so easy. I hope you don' mind where we got the labor from."

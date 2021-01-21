@@ -1,6 +1,6 @@
 att.PrintName = "33 Round Magazine"
 att.Icon = Material("entities/attachments/osi_17p_33rmag.png")
-att.Description = "Ah, bullets! Who doesn't love 'em? We all do! Hold nearly twice the amount of rounds in one mag with this fella!"
+att.Description = "Bullets! Who doesn't love them? We all do! Hold (nearly) twice the amount of rounds in one mag with patented bullet-stuffing and weight-increase German tech."
 att.Desc_Pros = {
     "pro.magcap"
 }

@@ -1,6 +1,6 @@
 att.PrintName = "17PL Slide"
 att.Icon = Material("entities/attachments/osi_17p_blackslide.png")
-att.Description = "Sleek black slide to lay down the law."
+att.Description = "Sleek black slide entitled to lay down the law."
 att.Desc_Pros = {
 }
 att.Desc_Cons = {
