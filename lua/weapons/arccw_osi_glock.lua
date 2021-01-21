@@ -136,7 +136,7 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 7
 
 SWEP.Hook_SelectReloadAnimation = function(wep, curanim)
-    local mag = wep.Attachments[3].Installed
+    local mag = wep.Attachments[4].Installed
     local ext = ""
     if mag == "osi_17p_mag_33" then
         ext = "_ext1"
