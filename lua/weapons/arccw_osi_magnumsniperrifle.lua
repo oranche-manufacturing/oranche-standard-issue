@@ -196,7 +196,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cycle",
         Time = 1.2,
-        MinProgress = 0.7,
+        MinProgress = 0.9,
         ShellEjectAt = 0.335,
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
@@ -210,7 +210,7 @@ SWEP.Animations = {
     ["cycle_iron"] = {
         Source = "cycle_ads",
         Time = 1.2,
-        MinProgress = 0.7,
+        MinProgress = 0.9,
         ShellEjectAt = 0.335,
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
