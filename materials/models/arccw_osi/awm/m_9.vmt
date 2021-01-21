@@ -1,6 +1,8 @@
 VertexLitGeneric
 {
 	$basetexture "models/arccw_osi/awm/m_9"
+	$selfillummask "models/arccw_osi/awm/m_9_si"
+	$selfillum 1
 	$phong 1
 	$phongboost 5
 	$phongexponent 20

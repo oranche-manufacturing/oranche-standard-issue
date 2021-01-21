@@ -48,7 +48,7 @@ SWEP.ExtendedClipSize = 7
 SWEP.ReducedClipSize = 3
 
 SWEP.VisualRecoilMult = 2 -- throw the viewmodel how far back
-SWEP.Recoil = 4 -- vertical recoil
+SWEP.Recoil = 3 -- vertical recoil
 SWEP.RecoilSide = 0 -- horizontal recoil (this is harder/more random to control!)
 
 SWEP.Delay = 60 / 120 -- 60 / RPM
@@ -139,9 +139,19 @@ SWEP.CustomizeAng = Angle(15, 30, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 7
+SWEP.ExtraSightDist = 2
 
 SWEP.Attachments = {
+    {
+        PrintName= "Optic",
+        Slot= {"osi_optic_hp","osi_optic","osi_optic_lp"},
+        Bone= "j_gun",
+        Offset= {
+            vpos = Vector(2, 0, 3.05),
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"rail"},
+    },
     {
         PrintName= "Muzzle",
         Slot= {"osi_suppressor","osi_device"},
@@ -152,7 +162,22 @@ SWEP.Attachments = {
         },	
     },
 }
-SWEP.AttachmentElements = {}
+SWEP.AttachmentElements = {
+    ["rail"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw_osi/attachments/compatibility rail.mdl",
+                Bone = "j_gun",
+                Scale = Vector(2, 1.5, 1),
+                Offset = {
+                    pos = Vector(3.4, 0, 2.5),
+                    ang = Angle(0, 0, 0)
+                },
+                ModelSkin = 1,
+            }
+        },
+    },
+}
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
@@ -176,9 +201,9 @@ SWEP.Animations = {
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.1},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.15},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.4},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.6},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.25},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.5},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.7},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.6},
                     },
     },
@@ -190,9 +215,9 @@ SWEP.Animations = {
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.1},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.15},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.4},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.6},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back.wav", 	t = 0.25},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", t = 0.5},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 0.7},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.6},
                     },
     },
@@ -220,6 +245,7 @@ SWEP.Animations = {
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 0.75},
+                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 1.5},
                         {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 1.85},
                         {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.4},
                     },
@@ -231,14 +257,15 @@ SWEP.Animations = {
         MinProgress = 2.6,
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.15},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.26},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_up.wav", 	t = 0.1},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.3},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
                         {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 1.25},
+                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 2},
                         {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 2.35},
                         {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 3.16},
-                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 3.35},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 3.1},
+                        {s = "weapons/arccw_osi/heavy bolt action/bolt_down.wav", 	t = 3.4},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 3.5},
                     },
     },

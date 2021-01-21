@@ -4,5 +4,5 @@ VertexLitGeneric
 	$phong 1
 	$phongboost 5
 	$phongexponent 20
-	$translucent 0
+	$translucent 1
 }
