@@ -133,6 +133,16 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 SWEP.ExtraSightDist = 7
 
 SWEP.Attachments = {
+    {
+        PrintName= "Optic",
+        Slot= {"osi_optic_hp","osi_optic_lp"},
+        Bone= "j_gun",
+        Offset= {
+            vpos = Vector(3.3, 0, 2.56),
+            vang = Angle(0, 0, 0),
+        },
+        InstalledEles = {"rail"},
+    },
 	{
 		PrintName= "Muzzle",
 		Slot= {"osi_suppressor","osi_device"},
@@ -141,9 +151,25 @@ SWEP.Attachments = {
 			vpos = Vector(19, 0, 0.45),
 			vang = Angle(0, 0, 0),
 		},	
-	},
+    },
+    
 }
-SWEP.AttachmentElements = {}
+SWEP.AttachmentElements = {
+    ["rail"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw_osi/attachments/compatibility rail.mdl",
+                Bone = "j_gun",
+                Scale = Vector(1.2, 1.3, 1),
+                Offset = {
+                    pos = Vector(3.3, 0, 2.1),
+                    ang = Angle(0, 0, 0)
+                },
+                ModelSkin = 0,
+            }
+        },
+    },
+}
 SWEP.Animations = {
 	["idle"] = {
         Source = "idle",

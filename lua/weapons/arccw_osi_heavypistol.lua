@@ -130,13 +130,12 @@ SWEP.ExtraSightDist = 7
 SWEP.Attachments = {
     {
         PrintName= "Optic",
-        Slot= {"osi_optic","osi_optic_lp"},
+        Slot= {"osi_optic_lp"},
         Bone= "j_bolt",
         Offset= {
             vpos = Vector(0.7, 0, 0.2),
             vang = Angle(0, 0, 0),
-        },
-        InstalledEles = {"rail"},
+        },  
     },
     {
         PrintName= "Muzzle",
