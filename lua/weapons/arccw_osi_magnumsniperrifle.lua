@@ -3,7 +3,7 @@ SWEP.UseHands= true
 SWEP.Spawnable= true
 SWEP.AdminOnly= false
 
-SWEP.PrintName= "MS-38"
+SWEP.PrintName= "Yeti Longshot"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Rifle"
 SWEP.Trivia_Desc= "Breaking world records since sometime ago, this gun is guranteed to pack more bang than its worth into your target at any range, at any time.\n\n3x damage against vehicles.\nTODO: Move to AMR when we make one"
