@@ -128,7 +128,7 @@ SWEP.CustomizeAng = Angle(15, 30, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 7
+SWEP.ExtraSightDist = 4
 
 SWEP.Attachments = {
     {

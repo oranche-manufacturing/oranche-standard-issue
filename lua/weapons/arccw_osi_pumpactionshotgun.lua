@@ -75,7 +75,7 @@ SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw_osi/pump action shotgun/fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/pump action shotgun/fire_supp.wav"
 SWEP.DistantShootSound = "weapons/arccw_osi/pump action shotgun/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
@@ -130,7 +130,7 @@ SWEP.CustomizeAng = Angle(15, 30, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 7
+SWEP.ExtraSightDist = 0
 
 -- written by 8z
 SWEP.ShotgunReload = true
@@ -154,7 +154,7 @@ SWEP.Attachments = {
         Slot= {"osi_optic_hp","osi_optic_lp"},
         Bone= "j_gun",
         Offset= {
-            vpos = Vector(4, -0.14, 2.36),
+            vpos = Vector(2, -0.14, 2.5),
             vang = Angle(0, 0, 0),
         },  
         InstalledEles = {"rail"},
@@ -175,7 +175,7 @@ SWEP.AttachmentElements = {
             {
                 Model = "models/weapons/arccw_osi/attachments/compatibility rail.mdl",
                 Bone = "j_gun",
-                Scale = Vector(1.4, 1.3, 1),
+                Scale = Vector(1.4, 1.6, 1),
                 Offset = {
                     pos = Vector(4, -0.14, 1.9),
                     ang = Angle(0, 0, 0)

@@ -16,8 +16,8 @@ att.Model = "models/weapons/arccw_osi/attachments/optic pistol.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -0.579),
-        Ang = Angle(0, -0.1, 0),
+        Pos = Vector(0, 7, -0.619),
+        Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ScrollFunc = ArcCW.SCROLL_NONE
     }

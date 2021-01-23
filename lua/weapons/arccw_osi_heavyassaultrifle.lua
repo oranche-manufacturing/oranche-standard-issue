@@ -130,7 +130,7 @@ SWEP.CustomizeAng = Angle(15, 30, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 7
+SWEP.ExtraSightDist = 0
 
 SWEP.Attachments = {
     {
@@ -236,9 +236,9 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
 						{s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.55},
-						{s = "weapons/arccw_osi/heavy assault rifle/chback.wav", 	t = 2.57},
-						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 2.9},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.1},
+						{s = "weapons/arccw_osi/heavy assault rifle/chback.wav", 	t = 2.7},
+						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 3.05},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.4},
 					},
     },
     --[[["exit_inspect"] = {

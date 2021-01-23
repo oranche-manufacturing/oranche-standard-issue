@@ -133,7 +133,7 @@ SWEP.CustomizeAng = Angle(15, 30, 10) + correct
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 7
+SWEP.ExtraSightDist = 4
 
 SWEP.Hook_SelectReloadAnimation = function(wep, curanim)
     local mag = wep.Attachments[4].Installed
@@ -156,6 +156,7 @@ SWEP.Attachments = {
             vpos = Vector(0.1, 0.17, 0.6),
             vang = Angle(0, 0, 0),
         },  
+        CorrectiveAng = Angle(1.3745, -0.1105, -0.1176),
     },
     {
 		PrintName = "Muzzle",
