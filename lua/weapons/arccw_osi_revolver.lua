@@ -72,9 +72,9 @@ SWEP.Primary.Ammo = "357"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/heavy pistol/fire.wav"
+SWEP.ShootSound = "weapons/arccw_osi/single action revolver/fire.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw_osi/normal pistol/fire_supp.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/heavy pistol/fire_dist.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/single action revolver/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_pistol_heavy"
