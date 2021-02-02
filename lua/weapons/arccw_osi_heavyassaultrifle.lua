@@ -6,7 +6,7 @@ SWEP.AdminOnly= false
 SWEP.PrintName= "KZ-47"
 SWEP.Category= "ArcCW - OSI"
 SWEP.Trivia_Class= "Assault Rifle"
-SWEP.Trivia_Desc= "Silly capitalism - too many choices! Only one choice needed: KZ-47! Rugged, dependable, always by your side, like true comrade. Accept no substitutes!"
+SWEP.Trivia_Desc= "Silly capitalism - too many choice! Only one choice needed: KZ-47! Rugged, dependable, always by your side, like true comrade. Accept no substitute!"
 SWEP.Trivia_Manufacturer= "Kremlin Ko."
 SWEP.Trivia_Country= "Russia"
 SWEP.Trivia_Calibre= "7.62x39mm"
@@ -204,10 +204,16 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/heavy assault rifle/raise.wav",     t = 0},
+					},
     },
     ["holster"] = {
         Source = "holster",
         Time = nil,
+        SoundTable = {
+						{s = "weapons/arccw_osi/heavy assault rifle/lower.wav",     t = 0},
+					},
     },
     ["reload"] = {
         Source = "reload",
@@ -220,8 +226,9 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
 						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.45},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.5},
+                        {s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.45},
+                        {s = "weapons/arccw_osi/magpouch_in.wav",               	t = 2.0},
+						{s = "weapons/arccw_osi/heavy assault rifle/settle.wav",  t = 2.62},
 					},
     },
 	["reload_empty"] = {
@@ -235,10 +242,11 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
 						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.55},
+                        {s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.55},
+                        {s = "weapons/arccw_osi/magpouch_in.wav",               	t = 2.1},
 						{s = "weapons/arccw_osi/heavy assault rifle/chback.wav", 	t = 2.7},
-						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 3.05},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.4},
+						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 3.0},
+						{s = "weapons/arccw_osi/heavy assault rifle/settle.wav",  t = 3.27},
 					},
     },
     --[[["exit_inspect"] = {

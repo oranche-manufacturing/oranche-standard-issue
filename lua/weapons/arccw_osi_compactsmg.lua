@@ -220,6 +220,9 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "pullout",
         Time = 0.25,
+        SoundTable = {
+						{s = "weapons/arccw_osi/compact smg/raise.wav",     t = 0},
+					},
     },
     ["ready"] = {
         Source = "pullout_first",
@@ -227,14 +230,17 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.1},
-						{s = "weapons/arccw_osi/compact smg/chback.wav", 	    t = 0.50},
-						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	t = 0.80},
+						{s = "weapons/arccw_osi/compact smg/chback.wav", 	        t = 0.50},
+						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	        t = 0.80},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
 					},
     },
     ["holster"] = {
         Source = "putaway",
         Time = 0.25,
+        SoundTable = {
+						{s = "weapons/arccw_osi/compact smg/lower.wav",             t = 0},
+					},
     },
     ["reload"] = {
         Source = "reload",
@@ -243,12 +249,13 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/magout.wav", 	t = 0.3},
+                        {s = "weapons/arccw_osi/compact smg/magout.wav", 	        t = 0.27},
+                        {s = "weapons/arccw_osi/magpouch_in.wav", 	                t = 0.31},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.15},
-						{s = "weapons/arccw_osi/compact smg/magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.8},
+						{s = "weapons/arccw_osi/compact smg/magin.wav", 	        t = 1.3},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.4},
+						{s = "weapons/arccw_osi/compact smg/settle.wav", 	        t = 1.8},
 					},
     },
 	["reload_empty"] = {
@@ -258,14 +265,15 @@ SWEP.Animations = {
         MinProgress = 1.7,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/compact smg/magout.wav", 	t = 0.30},
+                        {s = "weapons/arccw_osi/compact smg/magout.wav", 	        t = 0.27},
+                        {s = "weapons/arccw_osi/magpouch_in.wav", 	                t = 0.31},
 						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 1},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-						{s = "weapons/arccw_osi/compact smg/magin.wav", 	            t = 1.4},
-						{s = "weapons/arccw_osi/compact smg/chback.wav", 	t = 1.95},
-						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	t = 2.20},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.4},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
+						{s = "weapons/arccw_osi/compact smg/magin.wav", 	        t = 1.3},
+						{s = "weapons/arccw_osi/compact smg/chback.wav", 	        t = 1.95},
+						{s = "weapons/arccw_osi/compact smg/chamber.wav", 	        t = 2.20},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 2.22},
+						{s = "weapons/arccw_osi/compact smg/settle.wav", 	        t = 2.6},
 					},
     },
     ["enter_sprint"] = {
