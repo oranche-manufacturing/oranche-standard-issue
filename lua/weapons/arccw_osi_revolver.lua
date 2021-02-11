@@ -39,7 +39,7 @@ SWEP.Primary.ClipSize = 6
 SWEP.ExtendedClipSize = 6
 SWEP.ReducedClipSize = 6
 
-SWEP.VisualRecoilMult = 1 -- throw the viewmodel how far back
+SWEP.VisualRecoilMult = 3 -- throw the viewmodel how far back
 SWEP.Recoil = 5 -- vertical recoil
 SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
 
@@ -47,7 +47,7 @@ SWEP.Delay = 60 / 180 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
-        PrintName = "DOUBLE-ACTION",
+        PrintName = "SINGLE-ACTION",
         Mode = 1,
         CustomBars = "-",
     },
@@ -126,7 +126,7 @@ SWEP.CustomizeAng = Angle(15, 40, 10)
 SWEP.BarrelOffsetSighted = Vector(0, 0, 1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.ExtraSightDist = 4
+SWEP.ExtraSightDist = 3
 SWEP.RevolverReload = true -- cases all eject on reload
 
 SWEP.Attachments = {
