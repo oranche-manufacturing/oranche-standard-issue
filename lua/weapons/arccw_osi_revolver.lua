@@ -9,10 +9,10 @@ SWEP.Trivia_Class= "Single-Action Revolver"
 SWEP.Trivia_Desc= "When you need precision shooting and bigger bang, look no further than our hand-crafted, fine-pressed Excavator models."
 SWEP.Trivia_Manufacturer= "Blackeye Family Co."
 SWEP.Trivia_Country= "U.S.A"
-SWEP.Trivia_Calibre= ".500 Smith&Wesson"
+SWEP.Trivia_Calibre= ".500 Samuel n' Hill"
 SWEP.Slot= 1
 
-SWEP.ViewModel= "models/weapons/arccw_osi/heavy pistol.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/single action revolver 4.mdl"
 SWEP.ViewModelFOV= 75
 SWEP.WorldModel= "models/weapons/arccw_osi/heavy pistol.mdl"
 
@@ -47,7 +47,7 @@ SWEP.Delay = 60 / 180 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull
 SWEP.Firemodes = {
     {
-        PrintName = "SEMI-AUTO",
+        PrintName = "DOUBLE-ACTION",
         Mode = 1,
         CustomBars = "-",
     },
@@ -61,7 +61,7 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_pistol"
 SWEP.NPCWeight = 100 -- 100 in the center
 
-SWEP.AccuracyMOA = 7 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 350 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 250 -- inaccuracy added by moving. Applies in sights as well! Walking speed is considered as "maximum".
 SWEP.SightsDispersion = 0 -- dispersion that remains even in sights
@@ -84,9 +84,10 @@ SWEP.ShellScale = 1
 SWEP.ShellPhysScale = 1.5
 SWEP.ShellSounds = ArcCW.OSI.Shells_MedCal
 SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
+SWEP.ShellRotate = 180
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
-SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
+SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
 
 --[[SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerFinalMag = 0 -- the last X bullets in a magazine are all tracers
@@ -96,14 +97,14 @@ SWEP.SightTime = 0.28
 SWEP.SpeedMult = 0.975
 SWEP.SightedSpeedMult = 0.75
 
-SWEP.BarrelLength = 0
+SWEP.BarrelLength = 18
 
 SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.878, -2, 1.919),
-    Ang = Angle(-1.428, 0, 0.361),
+    Pos = Vector(-4.458, -2, 1.46),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.0,
     SwitchToSound = "",
     SwitchFromSound = "",
@@ -113,37 +114,37 @@ SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"
 
-SWEP.ActivePos = Vector(0, 0, 1)
+SWEP.ActivePos = Vector(-1, -2, 1.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0, 0, 0)
-SWEP.HolsterAng = Angle(0, 0, 0)
+SWEP.HolsterPos = Vector(0.75, 0, 0.75)
+SWEP.HolsterAng = Angle(-5, 10, 0)
 
-SWEP.CustomizePos = Vector(5, -2, -2)
-SWEP.CustomizeAng = Angle(15, 30, 10)
+SWEP.CustomizePos = Vector(6, -6, -1)
+SWEP.CustomizeAng = Angle(15, 40, 10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, 1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.ExtraSightDist = 4
+SWEP.RevolverReload = true -- cases all eject on reload
 
 SWEP.Attachments = {
     {
         PrintName= "Optic", -- Reminder to rail me!
-        Slot= {"osi_optic_lp"},
-        Bone= "j_bolt",
+        Slot= {"osi_optic", "osi_optic_lp"},
+        Bone= "j_gun",
         Offset= {
-            vpos = Vector(0.7, 0, 0.2),
+            vpos = Vector(2, 0, 2),
             vang = Angle(0, 0, 0),
-        },  
-        CorrectiveAng = Angle(1.428, 0, -0.361),
+        },
     },
     {
         PrintName= "Muzzle",
         Slot= {"osi_suppressor","osi_device"},
         Bone= "j_gun",
         Offset= {
-            vpos = Vector(7.5, 0, 0.15),
+            vpos = Vector(8.5, 0, 1.1),
             vang = Angle(0, 0, 0),
         },	
     },
@@ -160,123 +161,79 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = nil,
-        ShellEjectAt = 0,
+        Time = 0.55,
+        SoundTable = {
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 0.15},
+					},
     },
     ["fire_empty"] = {
         Source = "fire_last",
-        Time = 0.5,
-        SoundTable = {
-						{s = "weapons/arccw_osi/pistol_last.wav", 	                    t = 0},
-					},
-        ShellEjectAt = 0,
+        Time = 0.55,
     },
 	["fire_iron"] = {
         Source = "fire_ads",
-        Time = nil,
-        ShellEjectAt = 0,
+        Time = 0.55,
+        SoundTable = {
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 0.15},
+					},
     },
     ["fire_iron_empty"] = {
         Source = "fire_ads_last",
-        Time = 0.5,
-        SoundTable = {
-						{s = "weapons/arccw_osi/pistol_last.wav", 	                    t = 0},
-					},
-        ShellEjectAt = 0,
+        Time = 0.55,
     },
     ["draw"] = {
-        Source = "draw",
+        Source = "sprint_out",
         Time = nil,
     },
     ["holster"] = {
-        Source = "holster",
-        Time = nil,
-    },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        Time = nil,
-    },
-    ["holster_empty"] = {
-        Source = "holster_empty",
+        Source = "sprint_in",
         Time = nil,
     },
     ["reload"] = {
         Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 48/24,
-        MinProgress = 1.25,
+        Time = 3.1,
+        MinProgress = 1.5,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 1.0},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.4},
+						{s = "weapons/arccw_osi/single action revolver/open.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.5},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.8},
+						{s = "weapons/arccw_osi/single action revolver/loader.wav", 	    t = 1.5},
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.35},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.7},
 					},
+        ShellEjectAt = 0.9,
     },
 	["reload_empty"] = {
         Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 56/24,
-        MinProgress = 1.25,
+        Time = 3.3,
+        MinProgress = 1.5,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.97},
-						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.5},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
+						{s = "weapons/arccw_osi/single action revolver/open.wav", 	t = 0.2},
+						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.5},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.8},
+						{s = "weapons/arccw_osi/single action revolver/loader.wav", 	    t = 1.5},
+						{s = "weapons/arccw_osi/single action revolver/hammer.wav", 	t = 2.35},
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.7},
 					},
+        ShellEjectAt = 0.9,
     },
-    --[[["exit_inspect"] = {
-        Source = "inspect",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
-						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
-						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
-						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
-					},
-    },
-    ["exit_inspect_empty"] = {
-        Source = "inspect_empty",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.5},
-						{s = "weapons/arccw_osi/tick1.wav", 	                    t = 2.2},
-						{s = "weapons/arccw_osi/tick2.wav", 	                    t = 2.6},
-						{s = "weapons/arccw_osi/tick3.wav", 	                    t = 3.2},
-						{s = "weapons/arccw_osi/tick4.wav", 	                    t = 3.75},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 4},
-					},
-    },]]
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = nil,
     },
     ["idle_sprint"] = {
-        Source = "sprint",
-        Time = nil,
+        Source = "sprint_loop",
+        Time = 30/40,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
         Time = nil,
     },
-    ["enter_sprint_empty"] = {
-        Source = "sprint_in_empty",
-        Time = nil,
-    },
-    ["idle_sprint_empty"] = {
-        Source = "sprint_empty",
-        Time = nil,
-    },
-    ["exit_sprint_empty"] = {
-        Source = "sprint_out_empty",
-        Time = nil,
-    },
 }
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
