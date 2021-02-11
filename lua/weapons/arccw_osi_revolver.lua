@@ -184,10 +184,16 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "sprint_out",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/single action revolver/raise.wav", 	t = 0},
+        },
     },
     ["holster"] = {
         Source = "sprint_in",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/single action revolver/lower.wav", 	t = 0},
+        },
     },
     ["reload"] = {
         Source = "reload",

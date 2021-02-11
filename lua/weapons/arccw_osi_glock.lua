@@ -234,18 +234,30 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "pullout",
         Time = 0.5,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/raise.wav", 	t = 0},
+        },
     },
     ["draw_empty"] = {
         Source = "pullout_empty",
         Time = 0.5,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/raise.wav", 	t = 0},
+        },
     },
     ["holster"] = {
         Source = "putaway",
         Time = 0.5,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/lower.wav", 	t = 0},
+        },
     },
     ["holster_empty"] = {
         Source = "putaway_empty",
         Time = 0.5,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/lower.wav", 	t = 0},
+        },
     },
     ["reload"] = {
         Source = "reload",

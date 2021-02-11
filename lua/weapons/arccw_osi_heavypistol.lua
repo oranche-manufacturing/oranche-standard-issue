@@ -187,18 +187,30 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/heavy pistol/raise.wav", 	t = 0},
+        },
     },
     ["holster"] = {
         Source = "holster",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/heavy pistol/lower.wav", 	t = 0},
+        },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/raise.wav", 	t = 0},
+        },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
         Time = nil,
+        SoundTable = {
+            {s = "weapons/arccw_osi/glock/lower.wav", 	t = 0},
+        },
     },
     ["reload"] = {
         Source = "reload",

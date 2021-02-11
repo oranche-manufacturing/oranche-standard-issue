@@ -179,6 +179,9 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "pullout",
         Time = 0.25,
+        SoundTable = {
+            {s = "weapons/arccw_osi/compact smg/raise.wav",     t = 0},
+        },
     },
     ["ready"] = {
         Source = "pullout_first",
@@ -194,6 +197,9 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "putaway",
         Time = 0.25,
+        SoundTable = {
+            {s = "weapons/arccw_osi/compact smg/lower.wav",     t = 0},
+        },
     },
     ["reload"] = {
         Source = "reload",
