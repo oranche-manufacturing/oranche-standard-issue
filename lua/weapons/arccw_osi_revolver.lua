@@ -163,7 +163,7 @@ SWEP.Animations = {
         Source = "fire",
         Time = 0.55,
         SoundTable = {
-						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 0.15},
+						{s = "weapons/arccw_osi/single action revolver/hammer.wav", 	t = 0.15},
 					},
     },
     ["fire_empty"] = {
@@ -174,7 +174,7 @@ SWEP.Animations = {
         Source = "fire_ads",
         Time = 0.55,
         SoundTable = {
-						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 0.15},
+						{s = "weapons/arccw_osi/single action revolver/hammer.wav", 	t = 0.15},
 					},
     },
     ["fire_iron_empty"] = {
@@ -197,10 +197,10 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/single action revolver/open.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.5},
+						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.65},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.8},
 						{s = "weapons/arccw_osi/single action revolver/loader.wav", 	    t = 1.5},
-						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.35},
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.25},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.7},
 					},
         ShellEjectAt = 0.9,
@@ -213,12 +213,12 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/single action revolver/open.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.5},
+						{s = "weapons/arccw_osi/single action revolver/ejector.wav", 	t = 0.65},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.8},
 						{s = "weapons/arccw_osi/single action revolver/loader.wav", 	    t = 1.5},
-						{s = "weapons/arccw_osi/single action revolver/hammer.wav", 	t = 2.35},
-						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.6},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.7},
+						{s = "weapons/arccw_osi/single action revolver/hammer.wav", 	t = 2.2},
+						{s = "weapons/arccw_osi/single action revolver/close.wav", 	t = 2.45},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
 					},
         ShellEjectAt = 0.9,
     },
