@@ -12,7 +12,7 @@ SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= ".500 Samuel n' Hill"
 SWEP.Slot= 1
 
-SWEP.ViewModel= "models/weapons/arccw_osi/single action revolver 4.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/single action revolver.mdl"
 SWEP.ViewModelFOV= 75
 SWEP.WorldModel= "models/weapons/arccw_osi/heavy pistol.mdl"
 
@@ -86,8 +86,9 @@ SWEP.ShellSounds = ArcCW.OSI.Shells_MedCal
 SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
 SWEP.ShellRotate = 180
 
-SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
+SWEP.MuzzleEffectAttachment = 2 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 3 -- which attachment to put the case effect on
+SWEP.CamAttachment = 4 -- if set, this attachment will control camera movement
 
 --[[SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerFinalMag = 0 -- the last X bullets in a magazine are all tracers

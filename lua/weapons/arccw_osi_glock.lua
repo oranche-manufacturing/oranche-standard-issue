@@ -89,6 +89,7 @@ SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
+SWEP.CamAttachment = 3 -- if set, this attachment will control camera movement
 
 --[[SWEP.TracerNum = 1 -- tracer every X
 SWEP.TracerFinalMag = 0 -- the last X bullets in a magazine are all tracers
