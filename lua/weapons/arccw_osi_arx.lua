@@ -12,11 +12,9 @@ SWEP.Trivia_Country= "Italy"
 SWEP.Trivia_Calibre= "5.56x45mm"
 SWEP.Slot= 2
 
-SWEP.ViewModel= "models/weapons/arccw_osi/heavy assault rifle.mdl"
+SWEP.ViewModel= "models/weapons/arccw_osi/arx.mdl"
 SWEP.ViewModelFOV= 75
-SWEP.WorldModel= "models/weapons/arccw_osi/heavy assault rifle worldmodel.mdl"
-SWEP.MirrorWorldModel = "models/weapons/arccw_osi/heavy assault rifle worldmodel.mdl"
-
+SWEP.WorldModel= "models/weapons/arccw_osi/arx.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -182,7 +180,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
-        Source = "fire",
+        Source = "fire_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/rifle_last.wav", 	                    t = 0},
@@ -195,7 +193,7 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
-        Source = "fire_ads",
+        Source = "fire_last",
         Time = nil,
         SoundTable = {
 						{s = "weapons/arccw_osi/rifle_last.wav", 	                    t = 0},
@@ -203,15 +201,22 @@ SWEP.Animations = {
         ShellEjectAt = 0,
     },
     ["draw"] = {
-        Source = "draw",
-        Time = nil,
+        Source = "pullout",
+        Time = 39/30,
+        SoundTable = {
+						{s = "weapons/arccw_osi/heavy assault rifle/raise.wav",     t = 0},
+					},
+    },
+    ["ready"] = {
+        Source = "pullout_first",
+        Time = 39/30,
         SoundTable = {
 						{s = "weapons/arccw_osi/heavy assault rifle/raise.wav",     t = 0},
 					},
     },
     ["holster"] = {
-        Source = "holster",
-        Time = nil,
+        Source = "putaway",
+        Time = 17/30,
         SoundTable = {
 						{s = "weapons/arccw_osi/heavy assault rifle/lower.wav",     t = 0},
 					},
@@ -219,7 +224,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 3,
+        Time = 85/30,
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
@@ -235,7 +240,7 @@ SWEP.Animations = {
 	["reload_empty"] = {
         Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        Time = 3.5,
+        Time = 96/30,
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
@@ -250,26 +255,17 @@ SWEP.Animations = {
 						{s = "weapons/arccw_osi/heavy assault rifle/settle.wav",  t = 3.27},
 					},
     },
-    --[[["exit_inspect"] = {
-        Source = "inspect",
-        Time = nil,
-        SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.7},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 3.25},
-					},
-    },]]
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = nil,
+        Time = 6/40,
     },
     ["idle_sprint"] = {
-        Source = "sprint",
-        Time = nil,
+        Source = "sprint_loop",
+        Time = 16/40,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = nil,
+        Time = 9/40,
     },
 }
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
