@@ -174,6 +174,10 @@ SWEP.Animations = {
         Source = "idle",
         Time = nil,
     },
+	["idle_empty"] = {
+        Source = "idle_empty",
+        Time = nil,
+    },
     ["fire"] = {
         Source = "fire",
         Time = nil,
