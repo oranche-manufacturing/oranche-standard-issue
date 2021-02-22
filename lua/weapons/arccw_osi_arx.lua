@@ -103,7 +103,7 @@ SWEP.BulletBones = {}
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-2.37, 0, 1.24),
+    Pos = Vector(-2.681, 0, 0.28),
     Ang = Angle(0, 0, 0),
     Magnification = 1.2,
     SwitchToSound = "",
