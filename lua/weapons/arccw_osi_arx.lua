@@ -72,9 +72,9 @@ SWEP.Primary.Ammo = "smg1"
 SWEP.ShootVol = 80 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_osi/heavy assault rifle/fire.wav"
-SWEP.ShootSoundSilenced = "weapons/arccw_osi/heavy assault rifle/fire_supp.wav"
-SWEP.DistantShootSound = "weapons/arccw_osi/heavy assault rifle/fire_dist.wav"
+SWEP.ShootSound = "weapons/arccw_osi/arx/fire.wav"
+SWEP.ShootSoundSilenced = "weapons/arccw_osi/arx/fire_supp.wav"
+SWEP.DistantShootSound = "weapons/arccw_osi/arx/fire_dist.wav"
 
 SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_rifle"
@@ -208,21 +208,21 @@ SWEP.Animations = {
         Source = "pullout",
         Time = 39/30,
         SoundTable = {
-						{s = "weapons/arccw_osi/heavy assault rifle/raise.wav",     t = 0},
+						{s = "weapons/arccw_osi/arx/raise.wav",     t = 0},
 					},
     },
     ["ready"] = {
         Source = "pullout_first",
         Time = 39/30,
         SoundTable = {
-						{s = "weapons/arccw_osi/heavy assault rifle/raise.wav",     t = 0},
+						{s = "weapons/arccw_osi/arx/raise.wav",     t = 0},
 					},
     },
     ["holster"] = {
         Source = "putaway",
         Time = 17/30,
         SoundTable = {
-						{s = "weapons/arccw_osi/heavy assault rifle/lower.wav",     t = 0},
+						{s = "weapons/arccw_osi/arx/lower.wav",     t = 0},
 					},
     },
     ["reload"] = {
@@ -232,13 +232,11 @@ SWEP.Animations = {
         MinProgress = 2,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-                        {s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.45},
-                        {s = "weapons/arccw_osi/magpouch_in.wav",               	t = 2.0},
-						{s = "weapons/arccw_osi/heavy assault rifle/settle.wav",  t = 2.62},
+						{s = "weapons/arccw_osi/arx/magout.wav", 	                    t = 0.2},
+						{s = "weapons/arccw_osi/magpull.wav", 	t = 0.9},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.0},
+                        {s = "weapons/arccw_osi/arx/magin.wav", 	t = 1.133},
+                        {s = "weapons/arccw_osi/arx/settle.wav",  t = 1.75},
 					},
     },
 	["reload_empty"] = {
@@ -247,16 +245,13 @@ SWEP.Animations = {
         Time = 96/30,
         MinProgress = 2,
         SoundTable = {
-						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
-						{s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.3},
-						{s = "weapons/arccw_osi/heavy assault rifle/magcollide.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/heavy assault rifle/magout.wav", 	t = 0.9},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.2},
-                        {s = "weapons/arccw_osi/heavy assault rifle/magin.wav", 	t = 1.55},
-                        {s = "weapons/arccw_osi/magpouch_in.wav",               	t = 2.1},
-						{s = "weapons/arccw_osi/heavy assault rifle/chback.wav", 	t = 2.7},
-						{s = "weapons/arccw_osi/heavy assault rifle/chamber.wav", 	t = 3.0},
-						{s = "weapons/arccw_osi/heavy assault rifle/settle.wav",  t = 3.27},
+            {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
+            {s = "weapons/arccw_osi/arx/magout.wav", 	                    t = 0.2},
+            {s = "weapons/arccw_osi/magpull.wav", 	t = 0.9},
+            {s = "weapons/arccw_osi/cloth1.wav", 	                    t = 1.0},
+            {s = "weapons/arccw_osi/arx/magin.wav", 	t = 1.133},
+            {s = "weapons/arccw_osi/arx/chamber.wav",  t = 2.0},
+            {s = "weapons/arccw_osi/arx/settle.wav",  t = 2.1},
 					},
     },
     ["enter_sprint"] = {
