@@ -82,7 +82,7 @@ SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_smg"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/pistol shell.mdl"
-SWEP.ShellScale = 0.75
+SWEP.ShellScale = 0.5
 SWEP.ShellPhysScale = 1.5
 SWEP.ShellSounds = ArcCW.OSI.Shells_LowCal
 SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
@@ -268,9 +268,11 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+                        {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.6},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+                        {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.69},
 						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.5},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.15},
 					},
     },
 	["reload_empty"] = {
@@ -281,10 +283,12 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/glock/magout.wav", 	t = 0.2},
+                        {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.6},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
+                        {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.69},
 						{s = "weapons/arccw_osi/glock/magin.wav", 	t = 0.8},
 						{s = "weapons/arccw_osi/glock/chamber.wav", 	t = 1.4},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.6},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.65},
 					},
     },
     ["reload_ext1"] = {

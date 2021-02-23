@@ -80,7 +80,7 @@ SWEP.Override_ShellEffect = "osi_shelleject"
 SWEP.MuzzleEffect = "osi_muzzleeffect_pistol_heavy"
 SWEP.GMMuzzleEffect = true -- Use Gmod muzzle effects rather than particle effects
 SWEP.ShellModel = "models/weapons/arccw_osi/effects/pistol shell.mdl"
-SWEP.ShellScale = 1
+SWEP.ShellScale = 0.8
 SWEP.ShellPhysScale = 1.5
 SWEP.ShellSounds = ArcCW.OSI.Shells_MedCal
 SWEP.ShellRotateAngle = Angle(0, 180, 0) -- call of doo doo
@@ -221,8 +221,10 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
-						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 1.0},
+                        {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.4},
+                        {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.55},
+						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.6},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.85},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.4},
 					},
     },
@@ -234,9 +236,11 @@ SWEP.Animations = {
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
 						{s = "weapons/arccw_osi/heavy pistol/magout.wav", 	t = 0.2},
+                        {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.4},
+                        {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.55},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.97},
-						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.5},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.85},
+						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.4},
 						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
 					},
     },
