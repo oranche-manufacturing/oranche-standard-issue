@@ -33,8 +33,10 @@ SWEP.ShootEntity= nil
 
 SWEP.Hook_BulletHit = function(wep, data) -- TODO: move to an anti-materiel weapon when we make one
     if CLIENT then return end
+    local fucked = data.tr.Entity
 
-    if data.tr.Entity and data.tr.Entity:IsVehicle() then
+    if fucked then
+        if !fucked:IsPlayer() and !fucked:IsNPC() and !fucked:IsNextBot()
         data.damage = data.damage * 3
     end
 end
