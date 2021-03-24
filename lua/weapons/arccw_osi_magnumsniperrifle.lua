@@ -35,8 +35,7 @@ SWEP.Hook_BulletHit = function(wep, data) -- TODO: move to an anti-materiel weap
     if CLIENT then return end
     local fucked = data.tr.Entity
 
-    if fucked then
-        if !fucked:IsPlayer() and !fucked:IsNPC() and !fucked:IsNextBot()
+    if fucked and !fucked:IsPlayer() and !fucked:IsNPC() and !fucked:IsNextBot() then
         data.damage = data.damage * 3
     end
 end
