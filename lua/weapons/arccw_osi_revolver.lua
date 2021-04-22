@@ -40,8 +40,9 @@ SWEP.ExtendedClipSize = 6
 SWEP.ReducedClipSize = 6
 
 SWEP.VisualRecoilMult = 3 -- throw the viewmodel how far back
-SWEP.Recoil = 5 -- vertical recoil
+SWEP.Recoil = 2.5 -- vertical recoil
 SWEP.RecoilSide = 1 -- horizontal recoil (this is harder/more random to control!)
+SWEP.RecoilPunch = 3
 
 SWEP.Delay = 60 / 180 -- 60 / RPM
 SWEP.Num = 1 -- shots per trigger pull

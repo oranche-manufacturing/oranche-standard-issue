@@ -216,7 +216,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 48/24,
+        Time = 1.8,
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
@@ -224,14 +224,14 @@ SWEP.Animations = {
                         {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.4},
                         {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.55},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.6},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.85},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.4},
-					},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.75},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.1},
+					}
     },
 	["reload_empty"] = {
         Source = "reload_empty",
 		TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Time = 56/24,
+        Time = 2.0,
         MinProgress = 1.25,
         SoundTable = {
 						{s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
@@ -239,9 +239,9 @@ SWEP.Animations = {
                         {s = "weapons/arccw_osi/magpull.wav", 	                    t = 0.4},
                         {s = "weapons/arccw_osi/pst_magdrop_poly.wav", 	                    t = 0.55},
 						{s = "weapons/arccw_osi/cloth1.wav", 	                    t = 0.67},
-						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.85},
-						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.4},
-						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.7},
+						{s = "weapons/arccw_osi/heavy pistol/magin.wav", 	    t = 0.75},
+						{s = "weapons/arccw_osi/heavy pistol/chamber.wav", 	t = 1.25},
+						{s = "weapons/arccw_osi/cloth3.wav", 	                    t = 1.35},
 					},
     },
     --[[["exit_inspect"] = {

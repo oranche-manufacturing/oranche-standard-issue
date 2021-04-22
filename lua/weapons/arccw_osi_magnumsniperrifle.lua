@@ -247,7 +247,7 @@ SWEP.Animations = {
         SoundTable = {
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0},
                         {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 0.75},
-                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 1.5},
+                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 1.7},
                         {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 1.85},
                         {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.4},
                     },
@@ -263,7 +263,7 @@ SWEP.Animations = {
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_back_empty.wav", 	t = 0.24},
                         {s = "weapons/arccw_osi/cloth2.wav", 	                    t = 0.4},
                         {s = "weapons/arccw_osi/heavy bolt action/magout.wav", 	    t = 1.25},
-                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 2},
+                        {s = "weapons/arccw_osi/heavy bolt action/settle.wav", 	    t = 2.1},
                         {s = "weapons/arccw_osi/heavy bolt action/magin.wav", 	    t = 2.35},
                         {s = "weapons/arccw_osi/cloth3.wav", 	                    t = 2.6},
                         {s = "weapons/arccw_osi/heavy bolt action/bolt_forward.wav", 	t = 3.1},
