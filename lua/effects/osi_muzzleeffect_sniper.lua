@@ -15,8 +15,10 @@ function EFFECT:Init(data)
     local wpn = data:GetEntity()
     if !IsValid(wpn) then return end
     local ply = wpn:GetOwner()
-    local pwpn = ply:GetActiveWeapon()
     if !IsValid(ply) then return end
+    local pwpn = ply:GetActiveWeapon()
+    if !IsValid(pwpn) then return end
+    if !pwpn.ArcCW then return end
 
     local att = wpn:GetAttachment(pwpn:GetBuff_Override("Override_MuzzleEffectAttachment") or wpn.MuzzleEffectAttachment or 1)
 
