@@ -106,20 +106,23 @@ function EFFECT:Init(data)
     phys:SetBuoyancyRatio(12)
     phys:SetMaterial("gmod_silent")
 
-    local smin, smax = 0.8, 1.6
+    local smin, smax = 0.5, 1.2
+    local xd = 1
+    smin, smax = smin * xd, smax * xd
 
     if wpn.ShellEjectSpeedMin then smin = wpn.ShellEjectSpeedMin end
     if wpn.ShellEjectSpeedMax then smax = wpn.ShellEjectSpeedMax end
 
     phys:SetVelocity((dir * mag * math.Rand(smin, smax)) + plyvel)
-    phys:AddAngleVelocity(VectorRand() * 400)
+    --phys:AddAngleVelocity(VectorRand() * 200)
+    phys:AddAngleVelocity(Vector(4000, math.Rand(-1, 0.5)*2000, math.Rand(-1, 1)*1000))
 
     self.HitPitch = self.Pitch + math.Rand(-5,5)
 
     local emitter = ParticleEmitter(origin)
     local particle = emitter:Add(TableRandomChoice(images_smoke), origin)
     if (particle) and quality > 0 then
-        particle:SetVelocity(Vector(ang:Up()*4, 0, 0) + plyvel) 
+        particle:SetVelocity(Vector(ang:Up()*5, 0, 0) + plyvel) 
         particle:SetLifeTime(0)
         particle:SetDieTime(1)
         particle:SetStartAlpha(100)
@@ -146,6 +149,23 @@ function EFFECT:PhysicsCollide()
 end
 
 function EFFECT:Think()
+    local phys = self:GetPhysicsObject()
+
+    local newvel = phys:GetVelocity()
+
+    newvel.x = newvel.x * (1 - FrameTime()*5)
+    newvel.y = newvel.y * (1 - FrameTime()*5)
+    newvel.z = newvel.z * 1
+
+    phys:SetVelocity(newvel)
+
+    --[[if self.SpawnTime > CurTime()-0.08 then
+        phys:SetDamping(20 + (self.SpawnTime - CurTime()-0.1)*-50, 0)
+    else
+        phys:SetDamping(0, 0)
+    end]]
+
+
     if (self.SpawnTime + self.ShellTime) <= CurTime() then
         self:SetRenderFX( kRenderFxFadeFast )
         if (self.SpawnTime + self.ShellTime + 1) <= CurTime() then
