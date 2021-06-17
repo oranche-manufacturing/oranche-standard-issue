@@ -156,7 +156,7 @@ SWEP.Attachments = {
         Slot= {"osi_optic_hp","osi_optic_lp"},
         Bone= "j_gun",
         Offset= {
-            vpos = Vector(-4, 0, 2.8),
+            vpos = Vector(-4, 0, 3),
             vang = Angle(0, 0, 0),
         },
         InstalledEles = {"rail"},
@@ -179,7 +179,7 @@ SWEP.AttachmentElements = {
                 Bone = "j_gun",
                 Scale = Vector(.75, 1.7, 1),
                 Offset = {
-                    pos = Vector(-3.6, 0, 2.3),
+                    pos = Vector(-3.6, 0, 2.45),
                     ang = Angle(0, 0, 0)
                 },
                 ModelSkin = 1,
@@ -220,7 +220,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "pullout",
-        Time = 0.25,
+        Time = 0.4,
         SoundTable = {
 						{s = "weapons/arccw_osi/compact smg/raise.wav",     t = 0},
 					},
@@ -238,7 +238,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "putaway",
-        Time = 0.25,
+        Time = 0.4,
         SoundTable = {
 						{s = "weapons/arccw_osi/compact smg/lower.wav",             t = 0},
 					},

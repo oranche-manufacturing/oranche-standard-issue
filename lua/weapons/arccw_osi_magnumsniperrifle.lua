@@ -10,7 +10,7 @@ SWEP.Trivia_Desc= "Breaking world records since sometime ago, this gun is gurant
 SWEP.Trivia_Manufacturer= "Longshot UK"
 SWEP.Trivia_Country= "United Kingdom"
 SWEP.Trivia_Calibre= ".338 Lapua Magnum"
-SWEP.Slot= 2
+SWEP.Slot= 3
 
 SWEP.ViewModel= "models/weapons/arccw_osi/awm.mdl"
 SWEP.ViewModelFOV= 75

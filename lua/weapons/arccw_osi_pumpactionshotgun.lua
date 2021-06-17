@@ -10,7 +10,7 @@ SWEP.Trivia_Desc= "We defined the word 'pump-action' with this model, and have b
 SWEP.Trivia_Manufacturer= "Sportfield Arms U.S.A"
 SWEP.Trivia_Country= "U.S.A"
 SWEP.Trivia_Calibre= "12 Gauge"
-SWEP.Slot= 2
+SWEP.Slot= 3
 
 SWEP.ViewModel= "models/weapons/arccw_osi/pump action shotgun.mdl"
 SWEP.ViewModelFOV= 75

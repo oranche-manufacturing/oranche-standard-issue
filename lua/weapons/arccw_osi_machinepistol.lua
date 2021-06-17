@@ -179,7 +179,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "pullout",
-        Time = 0.25,
+        Time = 0.4,
         SoundTable = {
             {s = "weapons/arccw_osi/compact smg/raise.wav",     t = 0},
         },

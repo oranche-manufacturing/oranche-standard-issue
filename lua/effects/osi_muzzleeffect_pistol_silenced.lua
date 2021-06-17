@@ -1,4 +1,4 @@
-local images_muzzle = {"effects/arccw_osi/muzzle_smg1"}
+local images_muzzle = {"effects/arccw_osi/muzzle_sil_1"}
 local images_smoke = {"effects/arccw_osi/smoke1_1","effects/arccw_osi/smoke1_2","effects/arccw_osi/smoke1_3","effects/arccw_osi/smoke1_4",}
 local images_distort = {"sprites/heatwave"}
 
@@ -27,6 +27,23 @@ function EFFECT:Init(data)
     local addvel = ply:GetVelocity()
 
     local emitter = ParticleEmitter(pos)
+
+    for i = 1, quality do
+        local particle = emitter:Add(TableRandomChoice(images_muzzle), pos)
+
+        if particle then
+            particle:SetVelocity(addvel)
+            particle:SetLifeTime(0)
+            particle:SetDieTime(.101)
+            particle:SetStartAlpha(math.Rand(150, 200) * (4 - quality))
+            particle:SetEndAlpha(math.Rand(100, 150) * (4 - quality))
+            particle:SetStartSize(math.Rand(4, 5))
+            particle:SetEndSize(math.Rand(1, 2))
+            particle:SetLighting(false)
+            particle:SetRoll(math.random(0, 360))
+            particle:SetColor(255, 255, 255)
+        end
+    end
 
     for i = 1, quality do
         local particle = emitter:Add(TableRandomChoice(images_smoke), pos)
